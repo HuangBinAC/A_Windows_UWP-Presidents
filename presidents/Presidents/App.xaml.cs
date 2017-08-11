@@ -68,12 +68,13 @@ namespace Presidents
             //}
             //MobileCenter code
             //MobileCenter.SetLogUrl("https://in-staging-south-centralus.staging.avalanch.es");
-            MobileCenter.SetCountryCode("us");
-            MobileCenter.Start("58a1cdb5-0528-461d-ab99-2c133b0562e7", typeof(Analytics), typeof(Crashes), typeof(Push));
-            Analytics.Enabled = true;
+            MobileCenter.SetCountryCode("China");
+            MobileCenter.Start("84599058-77f7-4801-9e62-bdbb7bf7293d", typeof(Analytics), typeof(Crashes), typeof(Push));
+            //Analytics.Enabled = true;
             Analytics.TrackEvent("previousButton_Click");
             Analytics.TrackEvent("nextButton_Click");
-            var installid = MobileCenter.InstallId;
+            var installid = MobileCenter.GetInstallIdAsync();
+            System.Diagnostics.Debug.WriteLine("InstallId="+installid.Result.ToString());
             Push.CheckLaunchedFromNotification(e);
 
 

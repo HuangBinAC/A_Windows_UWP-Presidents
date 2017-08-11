@@ -1,4 +1,5 @@
 WinMetadata\Windows.winmd
+e_sqlite3.dll
 Assets\1024px-James_Madison.jpg
 Assets\165px-James_Madison.jpg
 Assets\165px-William_Henry_Harrison_daguerreotype_edit.jpg
@@ -63,4 +64,3 @@ Assets\William_Howard_Taft_1909.jpg
 Assets\Zachary_Taylor.png
 Presidents.xr.xml
 Properties\Default.rd.xml
-e_sqlite3.dll

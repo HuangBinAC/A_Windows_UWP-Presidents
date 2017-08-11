@@ -7,4 +7,8 @@
   <PropertyGroup>
     <AppxShowAllApps>False</AppxShowAllApps>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <EnableUnmanagedDebugging>true</EnableUnmanagedDebugging>
+    <BackgroundTaskDebugEngines>{3B476D35-A401-11D2-AAD4-00C04F990171}</BackgroundTaskDebugEngines>
+  </PropertyGroup>
 </Project>

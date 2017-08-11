@@ -1,1 +1,0 @@
-D:\test\uwp-experiences\event_demos\presidents\Presidents\Presidents.csproj;arm

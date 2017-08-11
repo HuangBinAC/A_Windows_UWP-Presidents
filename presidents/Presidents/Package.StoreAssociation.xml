@@ -358,9 +358,9 @@
     <Language Code="zu-za" InMinimumRequirementSet="true" />
   </SupportedLocales>
   <ProductReservedInfo>
-    <MainPackageIdentityName>63967vsclient.presents-uwp</MainPackageIdentityName>
+    <MainPackageIdentityName>63967vsclient.UWP-Presidentsbys</MainPackageIdentityName>
     <ReservedNames>
-      <ReservedName>presents-uwp</ReservedName>
+      <ReservedName>UWP-Presidentsbys</ReservedName>
     </ReservedNames>
   </ProductReservedInfo>
   <AccountPackageIdentityNames>
@@ -368,6 +368,21 @@
     <MainPackageIdentityName>63967vsclient.2658707C5F2A4</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.asxe</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.App</MainPackageIdentityName>
+    <MainPackageIdentityName>63967vsclient.appa</MainPackageIdentityName>
+    <MainPackageIdentityName>63967vsclient.appaa</MainPackageIdentityName>
+    <MainPackageIdentityName>63967vsclient.App3.UWP</MainPackageIdentityName>
+    <MainPackageIdentityName>63967vsclient.ava0810</MainPackageIdentityName>
+    <MainPackageIdentityName>63967vsclient.AVA744</MainPackageIdentityName>
+    <MainPackageIdentityName>63967vsclient.AVAAVAAVA</MainPackageIdentityName>
+    <MainPackageIdentityName>63967vsclient.avapresidents0810</MainPackageIdentityName>
+    <MainPackageIdentityName>63967vsclient.avapush0710</MainPackageIdentityName>
+    <MainPackageIdentityName>63967vsclient.avauwp</MainPackageIdentityName>
+    <MainPackageIdentityName>63967vsclient.avauwp74push</MainPackageIdentityName>
+    <MainPackageIdentityName>63967vsclient.avauwppush</MainPackageIdentityName>
+    <MainPackageIdentityName>63967vsclient.Bit-UWP-Push</MainPackageIdentityName>
+    <MainPackageIdentityName>63967vsclient.botengApp3test1</MainPackageIdentityName>
+    <MainPackageIdentityName>63967vsclient.Chaoyun123</MainPackageIdentityName>
+    <MainPackageIdentityName>63967vsclient.CloudPush</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.17933E35BB175</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.fc</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.fdfrtf</MainPackageIdentityName>
@@ -383,6 +398,8 @@
     <MainPackageIdentityName>63967vsclient.fcvhgc</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.fdddf</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.fe2u</MainPackageIdentityName>
+    <MainPackageIdentityName>63967vsclient.FileUploader</MainPackageIdentityName>
+    <MainPackageIdentityName>63967vsclient.FormUWP</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.frankmobileapp20160728</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.frfdr</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.frfvtg</MainPackageIdentityName>
@@ -407,6 +424,7 @@
     <MainPackageIdentityName>63967vsclient.huijow</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.hujCre</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.hyuhyu</MainPackageIdentityName>
+    <MainPackageIdentityName>63967vsclient.Int-UWP-Push</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.japs</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.japs-04</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.JayshZumoTest</MainPackageIdentityName>
@@ -456,6 +474,7 @@
     <MainPackageIdentityName>63967vsclient.jspspoi</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.jspsv</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.jstemp</MainPackageIdentityName>
+    <MainPackageIdentityName>63967vsclient.kaliekitest454270.0</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.4906694A04C3C</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.kljl</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.krtrtr</MainPackageIdentityName>
@@ -487,6 +506,8 @@
     <MainPackageIdentityName>63967vsclient.pdeapp9</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.ppppp</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.ppx</MainPackageIdentityName>
+    <MainPackageIdentityName>63967vsclient.presents-uwp</MainPackageIdentityName>
+    <MainPackageIdentityName>63967vsclient.Presidents-Chaoyun</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.pyy</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.q</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.qDW</MainPackageIdentityName>
@@ -550,6 +571,7 @@
     <MainPackageIdentityName>63967vsclient.sxsftf</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.tf</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.t6ur4u4</MainPackageIdentityName>
+    <MainPackageIdentityName>63967vsclient.TeAPP</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.temp1amd64</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.tempp</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.tempted</MainPackageIdentityName>
@@ -582,8 +604,25 @@
     <MainPackageIdentityName>63967vsclient.uio</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.UniversalWin10</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.uuki</MainPackageIdentityName>
+    <MainPackageIdentityName>63967vsclient.UWPPush0717</MainPackageIdentityName>
+    <MainPackageIdentityName>63967vsclient.UWP0629</MainPackageIdentityName>
+    <MainPackageIdentityName>63967vsclient.UWP-0718-1</MainPackageIdentityName>
+    <MainPackageIdentityName>63967vsclient.UWP-0720-1</MainPackageIdentityName>
+    <MainPackageIdentityName>63967vsclient.UWP0725</MainPackageIdentityName>
+    <MainPackageIdentityName>63967vsclient.UWP0727</MainPackageIdentityName>
+    <MainPackageIdentityName>63967vsclient.UWP0727-2</MainPackageIdentityName>
+    <MainPackageIdentityName>63967vsclient.UWP0801</MainPackageIdentityName>
+    <MainPackageIdentityName>63967vsclient.UWP0803</MainPackageIdentityName>
+    <MainPackageIdentityName>63967vsclient.UWP-CHZHA</MainPackageIdentityName>
+    <MainPackageIdentityName>63967vsclient.UWPMCPush</MainPackageIdentityName>
+    <MainPackageIdentityName>63967vsclient.UWPPush</MainPackageIdentityName>
+    <MainPackageIdentityName>63967vsclient.UWPPush1</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.UWPPushDemo</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.UWPService</MainPackageIdentityName>
+    <MainPackageIdentityName>63967vsclient.UWPStagin0808</MainPackageIdentityName>
+    <MainPackageIdentityName>63967vsclient.UWPTESTon0713</MainPackageIdentityName>
+    <MainPackageIdentityName>63967vsclient.UWP-TEST-on0713-3</MainPackageIdentityName>
+    <MainPackageIdentityName>63967vsclient.UWP-test-on0714-1</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.vcf</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.vdfyt</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.v-danicl</MainPackageIdentityName>
@@ -613,6 +652,7 @@
     <MainPackageIdentityName>63967vsclient.wewsasasa</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.winblueapp</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.winblueappabhikum</MainPackageIdentityName>
+    <MainPackageIdentityName>63967vsclient.Window-push</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.wqdese</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.wqDWGV</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.wrcrt</MainPackageIdentityName>
@@ -640,6 +680,7 @@
     <MainPackageIdentityName>63967vsclient.xssx</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.xsxsx</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.xsxsxs</MainPackageIdentityName>
+    <MainPackageIdentityName>63967vsclient.xuxiao-uwp</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.xxt</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.xxtemp</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.xxtt</MainPackageIdentityName>
@@ -648,14 +689,15 @@
     <MainPackageIdentityName>63967vsclient.xzcv</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.yjhwsad</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.yng</MainPackageIdentityName>
-    <MainPackageIdentityName>63967vsclient.51678CBEAF35B</MainPackageIdentityName>
-    <MainPackageIdentityName>63967vsclient.44982A151448E</MainPackageIdentityName>
-    <MainPackageIdentityName>63967vsclient.1864067A5529F</MainPackageIdentityName>
+    <MainPackageIdentityName>63967vsclient.62290ED3E8417</MainPackageIdentityName>
+    <MainPackageIdentityName>63967vsclient.50918524ED07F</MainPackageIdentityName>
+    <MainPackageIdentityName>63967vsclient.173893458BFD3</MainPackageIdentityName>
+    <MainPackageIdentityName>63967vsclient.22175C4146126</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.zd</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.zasx</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.zbahhu</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.zcf001</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.zxc1</MainPackageIdentityName>
   </AccountPackageIdentityNames>
-  <PackageInfoList LandingUrl="https://developer.microsoft.com/dashboard/Application?appId=9MXS1ZRNWW75" />
+  <PackageInfoList LandingUrl="https://developer.microsoft.com/dashboard/Application?appId=9NP1922CKT3W" />
 </StoreAssociation>
