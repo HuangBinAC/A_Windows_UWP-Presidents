@@ -78,7 +78,7 @@ namespace Presidents
         {
             Analytics.TrackEvent("clicked", new Dictionary<string, string> {
     { "Category", "nextButton_Click" },
-    { "FileName", "like.avi"}
+    { "FileName", "like.avi"} });
             Analytics.TrackEvent("nextButton_Click");
             GotoAnother(1);
     
@@ -94,7 +94,7 @@ namespace Presidents
             int index = PresIndex();
             index += increment;
             if (index < 0) index = 0;
-            if (index==5) throw new System.Exception("");
+            if (index==5) throw new System.Exception("This is a test crash");
             if (index >= President.FilteredPresidents.Count) index = President.FilteredPresidents.Count;
             this.Frame.Navigate(typeof(DetailsView), President.FilteredPresidents[index]);
         }
@@ -103,8 +103,7 @@ namespace Presidents
         {
             Analytics.TrackEvent("clicked", new Dictionary<string, string> {
     { "Category", "previousButton_Click" },
-    { "FileName", "favorite.avi"}
-});
+    { "FileName", "favorite.avi"} });
             Analytics.TrackEvent("previousButton_Click");
             GotoAnother(-1);
 
