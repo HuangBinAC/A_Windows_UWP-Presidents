@@ -71,8 +71,7 @@ namespace Presidents
             MobileCenter.SetCountryCode("China");
             MobileCenter.Start("84599058-77f7-4801-9e62-bdbb7bf7293d", typeof(Analytics), typeof(Crashes), typeof(Push));
             //Analytics.Enabled = true;
-            Analytics.TrackEvent("previousButton_Click");
-            Analytics.TrackEvent("nextButton_Click");
+            
             var installid = MobileCenter.GetInstallIdAsync();
             System.Diagnostics.Debug.WriteLine("InstallId="+installid.Result.ToString());
             Push.CheckLaunchedFromNotification(e);
