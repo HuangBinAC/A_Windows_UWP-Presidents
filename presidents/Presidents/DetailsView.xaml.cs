@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Microsoft.Azure.Mobile.Analytics;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -75,6 +76,10 @@ namespace Presidents
 
         private void nextButton_Click(object sender, RoutedEventArgs e)
         {
+            Analytics.TrackEvent("clicked", new Dictionary<string, string> {
+    { "Category", "nextButton_Click" },
+    { "FileName", "like.avi"}
+            Analytics.TrackEvent("nextButton_Click");
             GotoAnother(1);
     
         }
@@ -96,6 +101,11 @@ namespace Presidents
 
         private void previousButton_Click(object sender, RoutedEventArgs e)
         {
+            Analytics.TrackEvent("clicked", new Dictionary<string, string> {
+    { "Category", "previousButton_Click" },
+    { "FileName", "favorite.avi"}
+});
+            Analytics.TrackEvent("previousButton_Click");
             GotoAnother(-1);
 
         }
