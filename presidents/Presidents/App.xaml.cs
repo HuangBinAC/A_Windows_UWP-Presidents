@@ -68,7 +68,7 @@ namespace Presidents
             //}
             //MobileCenter code
             //MobileCenter.SetLogUrl("https://in-staging-south-centralus.staging.avalanch.es");
-            MobileCenter.SetCountryCode("China");
+            MobileCenter.SetCountryCode("hi");
             MobileCenter.Start("84599058-77f7-4801-9e62-bdbb7bf7293d", typeof(Analytics), typeof(Crashes), typeof(Push));
             //Analytics.Enabled = true;
             
@@ -76,6 +76,9 @@ namespace Presidents
             System.Diagnostics.Debug.WriteLine("InstallId="+installid.Result.ToString());
             Push.CheckLaunchedFromNotification(e);
 
+            CustomProperties properties = new CustomProperties();
+            properties.Set("color", "blue").Set("score", 10).Clear("score");
+            MobileCenter.SetCustomProperties(properties);
 
             ApplicationViewTitleBar titleBar = ApplicationView.GetForCurrentView().TitleBar;
             if (titleBar != null)
