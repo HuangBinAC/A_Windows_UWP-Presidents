@@ -76,7 +76,9 @@ namespace Presidents
 
         private void nextButton_Click(object sender, RoutedEventArgs e)
         {
-            
+            Analytics.TrackEvent("clicked", new Dictionary<string, string> {
+    { "Category", "nextButton_Click" },
+    { "FileName", "like.avi"}
             Analytics.TrackEvent("nextButton_Click");
             GotoAnother(1);
     
@@ -99,6 +101,10 @@ namespace Presidents
 
         private void previousButton_Click(object sender, RoutedEventArgs e)
         {
+            Analytics.TrackEvent("clicked", new Dictionary<string, string> {
+    { "Category", "previousButton_Click" },
+    { "FileName", "favorite.avi"}
+});
             Analytics.TrackEvent("previousButton_Click");
             GotoAnother(-1);
 
