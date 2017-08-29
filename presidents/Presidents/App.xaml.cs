@@ -67,9 +67,9 @@ namespace Presidents
             //    });
             //}
             //MobileCenter code
-            //MobileCenter.SetLogUrl("https://in-staging-south-centralus.staging.avalanch.es");
+            MobileCenter.SetLogUrl("https://in-staging-south-centralus.staging.avalanch.es");
             MobileCenter.SetCountryCode("hi");
-            MobileCenter.Start("84599058-77f7-4801-9e62-bdbb7bf7293d", typeof(Analytics), typeof(Crashes), typeof(Push));
+            MobileCenter.Start("d621ab6d-aefc-442c-a593-640ac2ec0d36", typeof(Analytics), typeof(Crashes), typeof(Push));
             //Analytics.Enabled = true;
             
             var installid = MobileCenter.GetInstallIdAsync();

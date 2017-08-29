@@ -27337,14 +27337,14 @@
     "UAP,Version=v10.0.14393": []
   },
   "packageFolders": {
-    "C:\\Users\\v-ruiywu\\.nuget\\packages\\": {}
+    "C:\\Users\\v-chmin\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
-      "projectUniqueName": "D:\\MobileCenter\\TestProject\\A_Windows_UWP-Presidents\\presidents\\Presidents\\Presidents.csproj",
+      "projectUniqueName": "C:\\test\\A_Windows_UWP-Presidents\\presidents\\Presidents\\Presidents.csproj",
       "projectName": "Presidents",
-      "projectPath": "D:\\MobileCenter\\TestProject\\A_Windows_UWP-Presidents\\presidents\\Presidents\\Presidents.csproj",
-      "projectJsonPath": "D:\\MobileCenter\\TestProject\\A_Windows_UWP-Presidents\\presidents\\Presidents\\project.json",
+      "projectPath": "C:\\test\\A_Windows_UWP-Presidents\\presidents\\Presidents\\Presidents.csproj",
+      "projectJsonPath": "C:\\test\\A_Windows_UWP-Presidents\\presidents\\Presidents\\project.json",
       "projectStyle": "ProjectJson"
     },
     "dependencies": {
