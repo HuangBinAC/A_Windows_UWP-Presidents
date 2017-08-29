@@ -19,25 +19,25 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>D:\MobileCenter\TestProject\A_Windows_UWP-Presidents\presidents\Presidents\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>7609700B232571B6403D5A3220B0399407CA13D3B07BA926E8370F5ED354F3BB</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>63967vsclient.UWP-Presidentsbys_1.1.0.0_x86__pekm0tavj4jwp</RegisteredPackageMoniker>
+    <RegisteredManifestChecksum>F1CDFDDBC5B122525F0B36097D3ADB4B88F9AF1E2CB49659EC95D301E8FFE9EB</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>63967vsclient.UWP-Presidentsbys_1.3.0.0_x86__pekm0tavj4jwp</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>63967vsclient.UWP-Presidentsbys_pekm0tavj4jwp!App</RegisteredUserModeAppID>
     <RegisteredPackageID>63967vsclient.UWP-Presidentsbys</RegisteredPackageID>
     <RegisteredPackagePublisher>CN=6B0E04BB-E44B-43CE-89DF-DBA5BC33E3A2</RegisteredPackagePublisher>
-    <RegisteredVersion>1.1.0.0</RegisteredVersion>
+    <RegisteredVersion>1.3.0.0</RegisteredVersion>
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
     <AppXManifest Include="D:\MobileCenter\TestProject\A_Windows_UWP-Presidents\presidents\Presidents\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-08-24T02:22:20.203</Modified>
+      <Modified>2017-08-24T03:20:09.037</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\MobileCenter\TestProject\A_Windows_UWP-Presidents\presidents\Presidents\bin\x86\Debug\Presidents.exe">
       <PackagePath>entrypoint\Presidents.exe</PackagePath>
-      <Modified>2017-08-24T02:22:17.687</Modified>
+      <Modified>2017-08-24T03:20:04.840</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\v-ruiywu\.nuget\packages\microsoft.azure.mobile.crashes\0.14.2\build\uap10.0\..\..\runtimes\win10-x86\native\WatsonRegistrationUtility.dll">
       <PackagePath>WatsonRegistrationUtility.dll</PackagePath>
@@ -840,11 +840,11 @@
     <AppxPackagedFile Include="D:\MobileCenter\TestProject\A_Windows_UWP-Presidents\presidents\Presidents\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-08-24T02:22:19.364</Modified>
+      <Modified>2017-08-24T03:20:07.452</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\MobileCenter\TestProject\A_Windows_UWP-Presidents\presidents\Presidents\bin\x86\Debug\Core\Presidents.exe">
       <PackagePath>Presidents.exe</PackagePath>
-      <Modified>2017-08-24T02:22:20.197</Modified>
+      <Modified>2017-08-24T03:20:09.020</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

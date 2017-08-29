@@ -7,7 +7,7 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="63967vsclient.UWP-Presidentsbys" Publisher="CN=6B0E04BB-E44B-43CE-89DF-DBA5BC33E3A2" Version="1.1.0.0" ProcessorArchitecture="x86" />
+  <Identity Name="63967vsclient.UWP-Presidentsbys" Publisher="CN=6B0E04BB-E44B-43CE-89DF-DBA5BC33E3A2" Version="1.3.0.0" ProcessorArchitecture="x86" />
   <mp:PhoneIdentity PhoneProductId="a52967f4-163c-4181-8e10-7ab83a0b3ac5" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>UWP-Presidentsbys</DisplayName>
@@ -20,7 +20,7 @@
     <PackageDependency Name="Microsoft.VCLibs.140.00.Debug" MinVersion="14.0.25023.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" />
   </Dependencies>
   <Resources>
-    <Resource Language="EN-US" />
+    <Resource Language="TR-TR" />
   </Resources>
   <Applications>
     <Application Id="App" Executable="Presidents.exe" EntryPoint="Presidents.App">
