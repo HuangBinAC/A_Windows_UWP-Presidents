@@ -27341,10 +27341,10 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\test\\A_Windows_UWP-Presidents\\presidents\\Presidents\\Presidents.csproj",
+      "projectUniqueName": "D:\\test\\A_Windows_UWP-Presidents\\presidents\\Presidents\\Presidents.csproj",
       "projectName": "Presidents",
-      "projectPath": "C:\\test\\A_Windows_UWP-Presidents\\presidents\\Presidents\\Presidents.csproj",
-      "projectJsonPath": "C:\\test\\A_Windows_UWP-Presidents\\presidents\\Presidents\\project.json",
+      "projectPath": "D:\\test\\A_Windows_UWP-Presidents\\presidents\\Presidents\\Presidents.csproj",
+      "projectJsonPath": "D:\\test\\A_Windows_UWP-Presidents\\presidents\\Presidents\\project.json",
       "projectStyle": "ProjectJson"
     },
     "dependencies": {

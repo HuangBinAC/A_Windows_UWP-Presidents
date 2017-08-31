@@ -1,31 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>AZURE-TESTCM</Machine>
+    <Machine>DD-CHMIN-XA</Machine>
     <WindowsUser>v-chmin</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
     <SolutionConfiguration>Debug|x86</SolutionConfiguration>
     <PackageArchitecture>x86</PackageArchitecture>
-    <PackageIdentityName>621dd702-8b23-4e4c-bbda-e7004b91047a</PackageIdentityName>
+    <PackageIdentityName>5889bad7-a577-4f88-a2c4-e7c6c230e368</PackageIdentityName>
     <PackageIdentityPublisher>CN=6B0E04BB-E44B-43CE-89DF-DBA5BC33E3A2</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\test\A_Windows_UWP-Presidents\presidents\Presidents\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>D:\test\A_Windows_UWP-Presidents\presidents\Presidents\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\test\A_Windows_UWP-Presidents\presidents\Presidents\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>D:\test\A_Windows_UWP-Presidents\presidents\Presidents\bin\x86\Debug\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\test\A_Windows_UWP-Presidents\presidents\Presidents\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="D:\test\A_Windows_UWP-Presidents\presidents\Presidents\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\test\A_Windows_UWP-Presidents\presidents\Presidents\bin\x86\Debug\Presidents.exe">
+    <AppxPackagedFile Include="D:\test\A_Windows_UWP-Presidents\presidents\Presidents\bin\x86\Debug\Presidents.exe">
       <PackagePath>entrypoint\Presidents.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\v-chmin\.nuget\packages\microsoft.azure.mobile.crashes\0.14.2\build\uap10.0\..\..\runtimes\win10-x86\native\WatsonRegistrationUtility.dll">
@@ -427,212 +427,212 @@
     <AppxPackagedFile Include="C:\Users\v-chmin\.nuget\packages\Microsoft.Azure.Mobile.Crashes\0.14.2\runtimes\win10-x86\lib\uap10.0\WatsonRegistrationUtility.winmd">
       <PackagePath>WatsonRegistrationUtility.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\1024px-James_Madison.jpg">
+    <AppxPackagedFile Include="D:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\1024px-James_Madison.jpg">
       <PackagePath>Assets\1024px-James_Madison.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\165px-James_Madison.jpg">
+    <AppxPackagedFile Include="D:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\165px-James_Madison.jpg">
       <PackagePath>Assets\165px-James_Madison.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\165px-William_Henry_Harrison_daguerreotype_edit.jpg">
+    <AppxPackagedFile Include="D:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\165px-William_Henry_Harrison_daguerreotype_edit.jpg">
       <PackagePath>Assets\165px-William_Henry_Harrison_daguerreotype_edit.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\44_Bill_Clinton_3x4.jpg">
+    <AppxPackagedFile Include="D:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\44_Bill_Clinton_3x4.jpg">
       <PackagePath>Assets\44_Bill_Clinton_3x4.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\Abraham_Lincoln.jpg">
+    <AppxPackagedFile Include="D:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\Abraham_Lincoln.jpg">
       <PackagePath>Assets\Abraham_Lincoln.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\Andrew_Jackson_Daguerrotype-crop.jpg">
+    <AppxPackagedFile Include="D:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\Andrew_Jackson_Daguerrotype-crop.jpg">
       <PackagePath>Assets\Andrew_Jackson_Daguerrotype-crop.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\Andrew_Johnson.jpg">
+    <AppxPackagedFile Include="D:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\Andrew_Johnson.jpg">
       <PackagePath>Assets\Andrew_Johnson.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\arthur21.jpg">
+    <AppxPackagedFile Include="D:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\arthur21.jpg">
       <PackagePath>Assets\arthur21.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\Calvin_Coolidge_cph_3g10777.jpg">
+    <AppxPackagedFile Include="D:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\Calvin_Coolidge_cph_3g10777.jpg">
       <PackagePath>Assets\Calvin_Coolidge_cph_3g10777.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\declaration_of_independence.JPG">
+    <AppxPackagedFile Include="D:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\declaration_of_independence.JPG">
       <PackagePath>Assets\declaration_of_independence.JPG</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\emancipation.JPG">
+    <AppxPackagedFile Include="D:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\emancipation.JPG">
       <PackagePath>Assets\emancipation.JPG</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\Franklin_D__Roosevelt.jpg">
+    <AppxPackagedFile Include="D:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\Franklin_D__Roosevelt.jpg">
       <PackagePath>Assets\Franklin_D__Roosevelt.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\Franklin_Pierce_MathewBrady.jpg">
+    <AppxPackagedFile Include="D:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\Franklin_Pierce_MathewBrady.jpg">
       <PackagePath>Assets\Franklin_Pierce_MathewBrady.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\garfield20.jpg">
+    <AppxPackagedFile Include="D:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\garfield20.jpg">
       <PackagePath>Assets\garfield20.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\George-W-Bush.jpg">
+    <AppxPackagedFile Include="D:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\George-W-Bush.jpg">
       <PackagePath>Assets\George-W-Bush.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\George_H._W._Bush_President_of_the_United_States_1989_official_portrait.jpg">
+    <AppxPackagedFile Include="D:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\George_H._W._Bush_President_of_the_United_States_1989_official_portrait.jpg">
       <PackagePath>Assets\George_H._W._Bush_President_of_the_United_States_1989_official_portrait.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\george_washington_deleware.JPG">
+    <AppxPackagedFile Include="D:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\george_washington_deleware.JPG">
       <PackagePath>Assets\george_washington_deleware.JPG</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\Gerald_Ford_-_NARA_-_530680.jpg">
+    <AppxPackagedFile Include="D:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\Gerald_Ford_-_NARA_-_530680.jpg">
       <PackagePath>Assets\Gerald_Ford_-_NARA_-_530680.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg">
+    <AppxPackagedFile Include="D:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg">
       <PackagePath>Assets\Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\grover24.jpg">
+    <AppxPackagedFile Include="D:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\grover24.jpg">
       <PackagePath>Assets\grover24.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\harrison23.jpg">
+    <AppxPackagedFile Include="D:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\harrison23.jpg">
       <PackagePath>Assets\harrison23.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\Harry_S__Truman.jpg">
+    <AppxPackagedFile Include="D:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\Harry_S__Truman.jpg">
       <PackagePath>Assets\Harry_S__Truman.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\JamesKPolk.jpg">
+    <AppxPackagedFile Include="D:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\JamesKPolk.jpg">
       <PackagePath>Assets\JamesKPolk.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\James_Buchanan.jpg">
+    <AppxPackagedFile Include="D:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\James_Buchanan.jpg">
       <PackagePath>Assets\James_Buchanan.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\James_Earl__Jimmy__Carter_-_NARA_-_558522.jpg">
+    <AppxPackagedFile Include="D:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\James_Earl__Jimmy__Carter_-_NARA_-_558522.jpg">
       <PackagePath>Assets\James_Earl__Jimmy__Carter_-_NARA_-_558522.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\John_F__Kennedy.jpg">
+    <AppxPackagedFile Include="D:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\John_F__Kennedy.jpg">
       <PackagePath>Assets\John_F__Kennedy.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\JQA_Photo_tif.jpg">
+    <AppxPackagedFile Include="D:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\JQA_Photo_tif.jpg">
       <PackagePath>Assets\JQA_Photo_tif.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\Lyndon_B._Johnson_Oval_Office_Portrait.jpg">
+    <AppxPackagedFile Include="D:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\Lyndon_B._Johnson_Oval_Office_Portrait.jpg">
       <PackagePath>Assets\Lyndon_B._Johnson_Oval_Office_Portrait.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\Martin_Van_Buren_by_Mathew_Brady_c1855-58.jpg">
+    <AppxPackagedFile Include="D:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\Martin_Van_Buren_by_Mathew_Brady_c1855-58.jpg">
       <PackagePath>Assets\Martin_Van_Buren_by_Mathew_Brady_c1855-58.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\mckinley25.jpg">
+    <AppxPackagedFile Include="D:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\mckinley25.jpg">
       <PackagePath>Assets\mckinley25.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\Millard_Fillmore_by_Brady_Studio.jpg">
+    <AppxPackagedFile Include="D:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\Millard_Fillmore_by_Brady_Studio.jpg">
       <PackagePath>Assets\Millard_Fillmore_by_Brady_Studio.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\Official_Portrait_of_President_Reagan_1981.jpg">
+    <AppxPackagedFile Include="D:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\Official_Portrait_of_President_Reagan_1981.jpg">
       <PackagePath>Assets\Official_Portrait_of_President_Reagan_1981.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\Official_Presidential_portrait_of_John_Adams_%28by_John_Trumbull,_circa_1792%29.jpg">
+    <AppxPackagedFile Include="D:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\Official_Presidential_portrait_of_John_Adams_%28by_John_Trumbull,_circa_1792%29.jpg">
       <PackagePath>Assets\Official_Presidential_portrait_of_John_Adams_%28by_John_Trumbull,_circa_1792%29.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\Official_Presidential_portrait_of_Thomas_Jefferson_%28by_Rembrandt_Peale,_1800%29.jpg">
+    <AppxPackagedFile Include="D:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\Official_Presidential_portrait_of_Thomas_Jefferson_%28by_Rembrandt_Peale,_1800%29.jpg">
       <PackagePath>Assets\Official_Presidential_portrait_of_Thomas_Jefferson_%28by_Rembrandt_Peale,_1800%29.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\President_Andrew_Johnson.jpg">
+    <AppxPackagedFile Include="D:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\President_Andrew_Johnson.jpg">
       <PackagePath>Assets\President_Andrew_Johnson.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\President_Barack_Obama.jpg">
+    <AppxPackagedFile Include="D:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\President_Barack_Obama.jpg">
       <PackagePath>Assets\President_Barack_Obama.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\President_Eisenhower.jpg">
+    <AppxPackagedFile Include="D:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\President_Eisenhower.jpg">
       <PackagePath>Assets\President_Eisenhower.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\President_Hoover_portrait_tif.jpg">
+    <AppxPackagedFile Include="D:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\President_Hoover_portrait_tif.jpg">
       <PackagePath>Assets\President_Hoover_portrait_tif.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\President_Wilson_1919_tif.jpg">
+    <AppxPackagedFile Include="D:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\President_Wilson_1919_tif.jpg">
       <PackagePath>Assets\President_Wilson_1919_tif.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\Richard_M._Nixon_NARA_-_530679.jpg">
+    <AppxPackagedFile Include="D:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\Richard_M._Nixon_NARA_-_530679.jpg">
       <PackagePath>Assets\Richard_M._Nixon_NARA_-_530679.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\roosevelt26.jpg">
+    <AppxPackagedFile Include="D:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\roosevelt26.jpg">
       <PackagePath>Assets\roosevelt26.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\Rutherford_Hayes_MathewBrady.jpg">
+    <AppxPackagedFile Include="D:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\Rutherford_Hayes_MathewBrady.jpg">
       <PackagePath>Assets\Rutherford_Hayes_MathewBrady.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\signing_constitution.JPG">
+    <AppxPackagedFile Include="D:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\signing_constitution.JPG">
       <PackagePath>Assets\signing_constitution.JPG</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\The_Peacemakers_1868_cropped.jpg">
+    <AppxPackagedFile Include="D:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\The_Peacemakers_1868_cropped.jpg">
       <PackagePath>Assets\The_Peacemakers_1868_cropped.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\Thomas_Jefferson_by_Rembrandt_Peale,_1800.jpg">
+    <AppxPackagedFile Include="D:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\Thomas_Jefferson_by_Rembrandt_Peale,_1800.jpg">
       <PackagePath>Assets\Thomas_Jefferson_by_Rembrandt_Peale,_1800.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\Tyler_Daguerreotype_%28restoration%29.jpg">
+    <AppxPackagedFile Include="D:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\Tyler_Daguerreotype_%28restoration%29.jpg">
       <PackagePath>Assets\Tyler_Daguerreotype_%28restoration%29.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\Ulysses_Grant.jpg">
+    <AppxPackagedFile Include="D:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\Ulysses_Grant.jpg">
       <PackagePath>Assets\Ulysses_Grant.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\Warren_G_Harding-Harris_&amp;_Ewing.jpg">
+    <AppxPackagedFile Include="D:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\Warren_G_Harding-Harris_&amp;_Ewing.jpg">
       <PackagePath>Assets\Warren_G_Harding-Harris_&amp;_Ewing.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\WashingtonCropped.JPG">
+    <AppxPackagedFile Include="D:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\WashingtonCropped.JPG">
       <PackagePath>Assets\WashingtonCropped.JPG</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\William_Howard_Taft_1909.jpg">
+    <AppxPackagedFile Include="D:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\William_Howard_Taft_1909.jpg">
       <PackagePath>Assets\William_Howard_Taft_1909.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\CodeFile.txt">
+    <AppxPackagedFile Include="D:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\CodeFile.txt">
       <PackagePath>Assets\CodeFile.txt</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\Flag_of_the_United_States.svg.png">
+    <AppxPackagedFile Include="D:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\Flag_of_the_United_States.svg.png">
       <PackagePath>Assets\Flag_of_the_United_States.svg.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\grover22.png">
+    <AppxPackagedFile Include="D:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\grover22.png">
       <PackagePath>Assets\grover22.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\Zachary_Taylor.png">
+    <AppxPackagedFile Include="D:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\Zachary_Taylor.png">
       <PackagePath>Assets\Zachary_Taylor.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="D:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="D:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="D:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="D:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\James_Monroe_White_House_portrait_1819.gif">
+    <AppxPackagedFile Include="D:\test\A_Windows_UWP-Presidents\presidents\Presidents\Assets\James_Monroe_White_House_portrait_1819.gif">
       <PackagePath>Assets\James_Monroe_White_House_portrait_1819.gif</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\test\A_Windows_UWP-Presidents\presidents\Presidents\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="D:\test\A_Windows_UWP-Presidents\presidents\Presidents\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\test\A_Windows_UWP-Presidents\presidents\Presidents\bin\x86\Debug\Presidents.xr.xml">
+    <AppxPackagedFile Include="D:\test\A_Windows_UWP-Presidents\presidents\Presidents\bin\x86\Debug\Presidents.xr.xml">
       <PackagePath>Presidents.xr.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\test\A_Windows_UWP-Presidents\presidents\Presidents\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="D:\test\A_Windows_UWP-Presidents\presidents\Presidents\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\test\A_Windows_UWP-Presidents\presidents\Presidents\bin\x86\Debug\Core\Presidents.exe">
+    <AppxPackagedFile Include="D:\test\A_Windows_UWP-Presidents\presidents\Presidents\bin\x86\Debug\Core\Presidents.exe">
       <PackagePath>Presidents.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
@@ -663,25 +663,25 @@
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
-      <Version>14.0.25022.0</Version>
+      <Version>14.0.25023.0</Version>
       <Architecture>ARM</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.25022.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.25023.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\ARM\Microsoft.VCLibs.ARM.Debug.14.00.appx</AppxLocation>
       <MoreInfo></MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
-      <Version>14.0.25022.0</Version>
+      <Version>14.0.25023.0</Version>
       <Architecture>x64</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.25022.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.25023.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x64\Microsoft.VCLibs.x64.Debug.14.00.appx</AppxLocation>
       <MoreInfo></MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
-      <Version>14.0.25022.0</Version>
+      <Version>14.0.25023.0</Version>
       <Architecture>x86</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.25022.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.25023.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x86\Microsoft.VCLibs.x86.Debug.14.00.appx</AppxLocation>
       <MoreInfo></MoreInfo>
     </ResolvedSDKReference>

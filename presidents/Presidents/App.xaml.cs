@@ -11,6 +11,8 @@ using Microsoft.Azure.Mobile;
 using Microsoft.Azure.Mobile.Analytics;
 using Microsoft.Azure.Mobile.Crashes;
 using Microsoft.Azure.Mobile.Push;
+using Microsoft.Azure.Mobile.Distribute;
+using Windows.UI.Xaml.Controls;
 
 namespace Presidents
 {
@@ -67,9 +69,10 @@ namespace Presidents
             //    });
             //}
             //MobileCenter code
-            MobileCenter.SetLogUrl("https://in-staging-south-centralus.staging.avalanch.es");
-            MobileCenter.SetCountryCode("hi");
-            MobileCenter.Start("d621ab6d-aefc-442c-a593-640ac2ec0d36", typeof(Analytics), typeof(Crashes), typeof(Push));
+            //MobileCenter.SetLogUrl("https://in-staging-south-centralus.staging.avalanch.es");
+            Distribute.ReleaseAvailable = OnReleaseAvailable;
+            MobileCenter.SetCountryCode("Thailand");
+            MobileCenter.Start("97e7ae3e-8925-40c1-a42e-3cbe8a0b91f4", typeof(Analytics), typeof(Crashes), typeof(Push));
             //Analytics.Enabled = true;
             
             var installid = MobileCenter.GetInstallIdAsync();
@@ -175,5 +178,50 @@ namespace Presidents
         }
 
         public static event EventHandler TenFootModeChanged;
+        bool OnReleaseAvailable(ReleaseDetails releaseDetails)
+        {
+            // Look at releaseDetails public properties to get version information, release notes text or release notes URL
+            string versionName = releaseDetails.ShortVersion;
+            string versionCodeOrBuildNumber = releaseDetails.Version;
+            string releaseNotes = releaseDetails.ReleaseNotes;
+            Uri releaseNotesUrl = releaseDetails.ReleaseNotesUrl;
+
+            // custom dialog
+            var title = "Version " + versionName + " available!";
+            var dialog = new ContentDialog();
+            dialog.Title = title;
+            dialog.Content = releaseNotes;
+
+            //On mandatory update, user cannot postpone
+            if (releaseDetails.MandatoryUpdate)
+            {
+                dialog.PrimaryButtonText = "Download and Install";
+                dialog.PrimaryButtonClick += (s, e) =>
+                  {
+                      Distribute.NotifyUpdateAction(UpdateAction.Update);
+                  };
+
+            }
+            else
+            {
+                dialog.PrimaryButtonText = "Download and Install";
+                dialog.PrimaryButtonClick += (s, e) =>
+                {
+                    Distribute.NotifyUpdateAction(UpdateAction.Update);
+                };
+                dialog.SecondaryButtonText = "Maybe tomorrow...";
+                dialog.SecondaryButtonClick += (s, e) =>
+                {
+                    Distribute.NotifyUpdateAction(UpdateAction.Update);
+                };
+            }
+            async void show()
+            {
+                await dialog.ShowAsync();
+            }
+            show();
+            //Return true if you are using your own dialog, false otherwise
+            return true;
+        }
     }
 }
