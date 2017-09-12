@@ -27351,23 +27351,11 @@
       "Microsoft.ApplicationInsights": "2.4.0",
       "Microsoft.ApplicationInsights.PersistenceChannel": "1.2.3",
       "Microsoft.ApplicationInsights.WindowsApps": "1.1.1",
-      "Microsoft.NETCore.UniversalWindowsPlatform": "5.4.0",
-      "Microsoft.Azure.Mobile.Analytics": {
-        "target": "Package",
-        "version": "[0.15.0, )"
-      },
-      "Microsoft.Azure.Mobile.Crashes": {
-        "target": "Package",
-        "version": "[0.15.0, )"
-      },
-      "Microsoft.Azure.Mobile.Distribute": {
-        "target": "Package",
-        "version": "[0.15.0, )"
-      },
-      "Microsoft.Azure.Mobile.Push": {
-        "target": "Package",
-        "version": "[0.15.0, )"
-      }
+      "Microsoft.Azure.Mobile.Analytics": "0.15.0",
+      "Microsoft.Azure.Mobile.Crashes": "0.15.0",
+      "Microsoft.Azure.Mobile.Distribute": "0.15.0",
+      "Microsoft.Azure.Mobile.Push": "0.15.0",
+      "Microsoft.NETCore.UniversalWindowsPlatform": "5.4.0"
     },
     "frameworks": {
       "uap10.0.14393": {}

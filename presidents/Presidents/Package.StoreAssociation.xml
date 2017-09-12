@@ -358,19 +358,21 @@
     <Language Code="zu-za" InMinimumRequirementSet="true" />
   </SupportedLocales>
   <ProductReservedInfo>
-    <MainPackageIdentityName>63967vsclient.UWP-Presidentsbys</MainPackageIdentityName>
+    <MainPackageIdentityName>63967vsclient.AUWPPresidents</MainPackageIdentityName>
     <ReservedNames>
-      <ReservedName>UWP-Presidentsbys</ReservedName>
+      <ReservedName>A_UWP_Presidents</ReservedName>
     </ReservedNames>
   </ProductReservedInfo>
   <AccountPackageIdentityNames>
+    <MainPackageIdentityName>63967vsclient.a234</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.aaa</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.2658707C5F2A4</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.asxe</MainPackageIdentityName>
-    <MainPackageIdentityName>63967vsclient.AUWPPresidents</MainPackageIdentityName>
+    <MainPackageIdentityName>63967vsclient.aaqwe</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.App</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.appaa</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.App3.UWP</MainPackageIdentityName>
+    <MainPackageIdentityName>63967vsclient.AsDS</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.ava0810</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.AVA744</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.AVAAVAAVA</MainPackageIdentityName>
@@ -425,6 +427,8 @@
     <MainPackageIdentityName>63967vsclient.hujCre</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.hyuhyu</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.Int-UWP-Push</MainPackageIdentityName>
+    <MainPackageIdentityName>63967vsclient.Jamie0001</MainPackageIdentityName>
+    <MainPackageIdentityName>63967vsclient.Jamie0002</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.japs</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.japs-04</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.JayshZumoTest</MainPackageIdentityName>
@@ -481,6 +485,8 @@
     <MainPackageIdentityName>63967vsclient.llpmko</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.Lopreutieo</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.lukewestlarge</MainPackageIdentityName>
+    <MainPackageIdentityName>63967vsclient.MapTest1</MainPackageIdentityName>
+    <MainPackageIdentityName>63967vsclient.MapTest4</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.mbraudetest</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.MDDTest</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.mikjio</MainPackageIdentityName>
@@ -530,6 +536,7 @@
     <MainPackageIdentityName>63967vsclient.rrrss</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.rrt</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.rsferfctf</MainPackageIdentityName>
+    <MainPackageIdentityName>63967vsclient.rt</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.s</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.52549E746825C</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.shu</MainPackageIdentityName>
@@ -554,6 +561,7 @@
     <MainPackageIdentityName>63967vsclient.sdwe</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.selectpoint</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.sfcgvh</MainPackageIdentityName>
+    <MainPackageIdentityName>63967vsclient.sfertg</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.sfsfsf</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.sgvx</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.sgwud</MainPackageIdentityName>
@@ -620,6 +628,7 @@
     <MainPackageIdentityName>63967vsclient.UWP-CC0817</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.UWP-CHZHA</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.UWPMCPush</MainPackageIdentityName>
+    <MainPackageIdentityName>63967vsclient.UWP-Presidentsbys</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.UWPPush</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.UWPPush1</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.UWPPushDemo</MainPackageIdentityName>
@@ -694,14 +703,15 @@
     <MainPackageIdentityName>63967vsclient.xzcv</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.yjhwsad</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.yng</MainPackageIdentityName>
-    <MainPackageIdentityName>63967vsclient.571773CEE4534</MainPackageIdentityName>
-    <MainPackageIdentityName>63967vsclient.4824811D7AAA3</MainPackageIdentityName>
-    <MainPackageIdentityName>63967vsclient.54834C526BF93</MainPackageIdentityName>
+    <MainPackageIdentityName>63967vsclient.217952E2F21A8</MainPackageIdentityName>
+    <MainPackageIdentityName>63967vsclient.3192226AB574E</MainPackageIdentityName>
+    <MainPackageIdentityName>63967vsclient.4090358F2BD46</MainPackageIdentityName>
+    <MainPackageIdentityName>63967vsclient.349668823BD98</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.zd</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.zasx</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.zbahhu</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.zcf001</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.zxc1</MainPackageIdentityName>
   </AccountPackageIdentityNames>
-  <PackageInfoList LandingUrl="https://developer.microsoft.com/dashboard/Application?appId=9NP1922CKT3W" />
+  <PackageInfoList LandingUrl="https://developer.microsoft.com/dashboard/Application?appId=9N38GXDP3R5C" />
 </StoreAssociation>

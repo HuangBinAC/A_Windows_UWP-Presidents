@@ -7,7 +7,7 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="63967vsclient.AUWPPresidents" Publisher="CN=6B0E04BB-E44B-43CE-89DF-DBA5BC33E3A2" Version="4.2.0.0" ProcessorArchitecture="x86" />
+  <Identity Name="63967vsclient.AUWPPresidents" Publisher="CN=6B0E04BB-E44B-43CE-89DF-DBA5BC33E3A2" Version="5.1.1.0" ProcessorArchitecture="x86" />
   <mp:PhoneIdentity PhoneProductId="5889bad7-a577-4f88-a2c4-e7c6c230e368" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>A_UWP_Presidents</DisplayName>
