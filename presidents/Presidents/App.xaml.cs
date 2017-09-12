@@ -69,10 +69,10 @@ namespace Presidents
             //    });
             //}
             //MobileCenter code
-            //MobileCenter.SetLogUrl("https://in-staging-south-centralus.staging.avalanch.es");
+            MobileCenter.SetLogUrl("https://in-staging-south-centralus.staging.avalanch.es");
             Distribute.ReleaseAvailable = OnReleaseAvailable;
             MobileCenter.SetCountryCode("Thailand");
-            MobileCenter.Start("97e7ae3e-8925-40c1-a42e-3cbe8a0b91f4", typeof(Analytics), typeof(Crashes), typeof(Push));
+            MobileCenter.Start("75de1b3a-f2f7-4e35-b718-a753ee5d904b", typeof(Analytics), typeof(Crashes), typeof(Push));
             //Analytics.Enabled = true;
             
             var installid = MobileCenter.GetInstallIdAsync();
