@@ -8,7 +8,7 @@
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
     <SolutionConfiguration>Debug|x86</SolutionConfiguration>
     <PackageArchitecture>x86</PackageArchitecture>
-    <PackageIdentityName>5889bad7-a577-4f88-a2c4-e7c6c230e368</PackageIdentityName>
+    <PackageIdentityName>ddc01fca-2e29-47ec-82ab-c340608a451f</PackageIdentityName>
     <PackageIdentityPublisher>CN=6B0E04BB-E44B-43CE-89DF-DBA5BC33E3A2</PackageIdentityPublisher>
     <IntermediateOutputPath>D:\test\A_Windows_UWP-Presidents\presidents\Presidents\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
@@ -19,25 +19,25 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>D:\test\A_Windows_UWP-Presidents\presidents\Presidents\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>2BA1B862C1D3882FE690210D4F9AFD8FE62859B85FD91440CD7E297E5BF93CC8</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>63967vsclient.AUWPPresidents_5.1.1.0_x86__pekm0tavj4jwp</RegisteredPackageMoniker>
-    <RegisteredUserModeAppID>63967vsclient.AUWPPresidents_pekm0tavj4jwp!App</RegisteredUserModeAppID>
-    <RegisteredPackageID>63967vsclient.AUWPPresidents</RegisteredPackageID>
+    <RegisteredManifestChecksum>B133F4890202B00D27D40D0D4E4EDCC172706F908780A7DE1DE741FAC424BC2E</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>63967vsclient.Presidents-uwp_1.1.0.0_x86__pekm0tavj4jwp</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>63967vsclient.Presidents-uwp_pekm0tavj4jwp!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>63967vsclient.Presidents-uwp</RegisteredPackageID>
     <RegisteredPackagePublisher>CN=6B0E04BB-E44B-43CE-89DF-DBA5BC33E3A2</RegisteredPackagePublisher>
-    <RegisteredVersion>5.1.1.0</RegisteredVersion>
+    <RegisteredVersion>1.1.0.0</RegisteredVersion>
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
     <AppXManifest Include="D:\test\A_Windows_UWP-Presidents\presidents\Presidents\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-09-12T02:16:10.517</Modified>
+      <Modified>2017-09-12T06:12:35.852</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\test\A_Windows_UWP-Presidents\presidents\Presidents\bin\x86\Debug\Presidents.exe">
       <PackagePath>entrypoint\Presidents.exe</PackagePath>
-      <Modified>2017-09-12T02:16:03.111</Modified>
+      <Modified>2017-09-12T06:09:23.525</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\v-chmin\.nuget\packages\microsoft.azure.mobile.crashes\0.15.0\build\uap10.0\..\..\runtimes\win10-x86\native\WatsonRegistrationUtility.dll">
       <PackagePath>WatsonRegistrationUtility.dll</PackagePath>
@@ -840,11 +840,11 @@
     <AppxPackagedFile Include="D:\test\A_Windows_UWP-Presidents\presidents\Presidents\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-09-12T02:16:08.124</Modified>
+      <Modified>2017-09-12T06:12:34.644</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\test\A_Windows_UWP-Presidents\presidents\Presidents\bin\x86\Debug\Core\Presidents.exe">
       <PackagePath>Presidents.exe</PackagePath>
-      <Modified>2017-09-12T02:16:10.503</Modified>
+      <Modified>2017-09-12T06:12:35.847</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

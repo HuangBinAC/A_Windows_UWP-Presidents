@@ -358,16 +358,18 @@
     <Language Code="zu-za" InMinimumRequirementSet="true" />
   </SupportedLocales>
   <ProductReservedInfo>
-    <MainPackageIdentityName>63967vsclient.AUWPPresidents</MainPackageIdentityName>
+    <MainPackageIdentityName>63967vsclient.Presidents-uwp</MainPackageIdentityName>
     <ReservedNames>
-      <ReservedName>A_UWP_Presidents</ReservedName>
+      <ReservedName>Presidents-uwp</ReservedName>
     </ReservedNames>
   </ProductReservedInfo>
   <AccountPackageIdentityNames>
+    <MainPackageIdentityName>63967vsclient.A131</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.a234</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.aaa</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.2658707C5F2A4</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.asxe</MainPackageIdentityName>
+    <MainPackageIdentityName>63967vsclient.AUWPPresidents</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.aaqwe</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.App</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.appaa</MainPackageIdentityName>
@@ -713,5 +715,5 @@
     <MainPackageIdentityName>63967vsclient.zcf001</MainPackageIdentityName>
     <MainPackageIdentityName>63967vsclient.zxc1</MainPackageIdentityName>
   </AccountPackageIdentityNames>
-  <PackageInfoList LandingUrl="https://developer.microsoft.com/dashboard/Application?appId=9N38GXDP3R5C" />
+  <PackageInfoList LandingUrl="https://developer.microsoft.com/dashboard/Application?appId=9PJJ1RCGM7M5" />
 </StoreAssociation>

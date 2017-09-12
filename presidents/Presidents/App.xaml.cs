@@ -34,6 +34,7 @@ namespace Presidents
         /// <param name="e">Details about the launch request and process.</param>
         protected override void OnLaunched(LaunchActivatedEventArgs e)
         {
+            MobileCenter.SetLogUrl("https://in-staging-south-centralus.staging.avalanch.es");
             Push.PushNotificationReceived += (sender, es) => {
 
                 // Add the notification message and title to the message
@@ -69,15 +70,15 @@ namespace Presidents
             //    });
             //}
             //MobileCenter code
-            MobileCenter.SetLogUrl("https://in-staging-south-centralus.staging.avalanch.es");
             Distribute.ReleaseAvailable = OnReleaseAvailable;
             MobileCenter.SetCountryCode("Thailand");
-            MobileCenter.Start("75de1b3a-f2f7-4e35-b718-a753ee5d904b", typeof(Analytics), typeof(Crashes), typeof(Push));
+            MobileCenter.Start("75de1b3a-f2f7-4e35-b718-a753ee5d904b", typeof(Analytics), typeof(Crashes), typeof(Push),typeof(Distribute));
             //Analytics.Enabled = true;
-            
+            Push.CheckLaunchedFromNotification(e);
+
             var installid = MobileCenter.GetInstallIdAsync();
             System.Diagnostics.Debug.WriteLine("InstallId="+installid.Result.ToString());
-            Push.CheckLaunchedFromNotification(e);
+
 
             CustomProperties properties = new CustomProperties();
             properties.Set("color", "blue").Set("score", 10).Clear("score");
