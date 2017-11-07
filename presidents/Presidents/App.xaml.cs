@@ -72,7 +72,7 @@ namespace Presidents
             //MobileCenter code
             Distribute.ReleaseAvailable = OnReleaseAvailable;
             MobileCenter.SetCountryCode("Thailand");
-            MobileCenter.Start("62db5b31-8014-4236-8944-c9ed1e471459", typeof(Analytics), typeof(Crashes), typeof(Push),typeof(Distribute));
+            MobileCenter.Start("09e4f30b-709c-4132-9809-d4e955e7ca46", typeof(Analytics), typeof(Crashes), typeof(Push),typeof(Distribute));
             //Analytics.Enabled = true;
             Push.CheckLaunchedFromNotification(e);
 
