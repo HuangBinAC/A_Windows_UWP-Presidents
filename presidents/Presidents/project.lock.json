@@ -2,6 +2,97 @@
   "version": 2,
   "targets": {
     "UAP,Version=v10.0.14393": {
+      "Microsoft.AppCenter/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
+          "Newtonsoft.Json": "6.0.1",
+          "sqlite-net-pcl": "1.3.1"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.AppCenter.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.AppCenter.dll": {}
+        }
+      },
+      "Microsoft.AppCenter.Analytics/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AppCenter": "1.0.0"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.AppCenter.Analytics.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.AppCenter.Analytics.dll": {}
+        }
+      },
+      "Microsoft.AppCenter.Crashes/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AppCenter": "1.0.0"
+        },
+        "compile": {
+          "ref/uap10.0/Microsoft.AppCenter.Crashes.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45%2Bwin8%2Bwpa81%2Bwp8/Microsoft.AppCenter.Crashes.dll": {}
+        },
+        "build": {
+          "build/uap10.0/Microsoft.AppCenter.Crashes.targets": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win10-arm/lib/uap10.0/Microsoft.AppCenter.Crashes.dll": {
+            "assetType": "runtime",
+            "rid": "win10-arm"
+          },
+          "runtimes/win10-arm/lib/uap10.0/WatsonRegistrationUtility.winmd": {
+            "assetType": "runtime",
+            "rid": "win10-arm"
+          },
+          "runtimes/win10-arm/native/WatsonRegistrationUtility.dll": {
+            "assetType": "native",
+            "rid": "win10-arm"
+          },
+          "runtimes/win10-x64/lib/uap10.0/Microsoft.AppCenter.Crashes.dll": {
+            "assetType": "runtime",
+            "rid": "win10-x64"
+          },
+          "runtimes/win10-x64/lib/uap10.0/WatsonRegistrationUtility.winmd": {
+            "assetType": "runtime",
+            "rid": "win10-x64"
+          },
+          "runtimes/win10-x64/native/WatsonRegistrationUtility.dll": {
+            "assetType": "native",
+            "rid": "win10-x64"
+          },
+          "runtimes/win10-x86/lib/uap10.0/Microsoft.AppCenter.Crashes.dll": {
+            "assetType": "runtime",
+            "rid": "win10-x86"
+          },
+          "runtimes/win10-x86/lib/uap10.0/WatsonRegistrationUtility.winmd": {
+            "assetType": "runtime",
+            "rid": "win10-x86"
+          },
+          "runtimes/win10-x86/native/WatsonRegistrationUtility.dll": {
+            "assetType": "native",
+            "rid": "win10-x86"
+          }
+        }
+      },
+      "Microsoft.AppCenter.Push/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AppCenter": "1.0.0"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.AppCenter.Push.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.AppCenter.Push.dll": {}
+        }
+      },
       "Microsoft.ApplicationInsights/2.4.0": {
         "type": "package",
         "dependencies": {
@@ -41,109 +132,6 @@
           "lib/win81/Microsoft.ApplicationInsights.Extensibility.Windows.dll": {}
         }
       },
-      "Microsoft.Azure.Mobile/0.14.2": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
-          "Newtonsoft.Json": "6.0.1",
-          "sqlite-net-pcl": "1.3.1"
-        },
-        "compile": {
-          "lib/uap10.0/Microsoft.Azure.Mobile.dll": {}
-        },
-        "runtime": {
-          "lib/uap10.0/Microsoft.Azure.Mobile.dll": {}
-        }
-      },
-      "Microsoft.Azure.Mobile.Analytics/0.14.2": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Azure.Mobile": "0.14.2"
-        },
-        "compile": {
-          "lib/uap10.0/Microsoft.Azure.Mobile.Analytics.dll": {}
-        },
-        "runtime": {
-          "lib/uap10.0/Microsoft.Azure.Mobile.Analytics.dll": {}
-        }
-      },
-      "Microsoft.Azure.Mobile.Crashes/0.14.2": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Azure.Mobile": "0.14.2"
-        },
-        "compile": {
-          "ref/uap10.0/Microsoft.Azure.Mobile.Crashes.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Microsoft.Azure.Mobile.Crashes.dll": {}
-        },
-        "build": {
-          "build/uap10.0/Microsoft.Azure.Mobile.Crashes.targets": {}
-        },
-        "runtimeTargets": {
-          "runtimes/win10-arm/lib/uap10.0/Microsoft.Azure.Mobile.Crashes.dll": {
-            "assetType": "runtime",
-            "rid": "win10-arm"
-          },
-          "runtimes/win10-arm/lib/uap10.0/WatsonRegistrationUtility.winmd": {
-            "assetType": "runtime",
-            "rid": "win10-arm"
-          },
-          "runtimes/win10-arm/native/WatsonRegistrationUtility.dll": {
-            "assetType": "native",
-            "rid": "win10-arm"
-          },
-          "runtimes/win10-x64/lib/uap10.0/Microsoft.Azure.Mobile.Crashes.dll": {
-            "assetType": "runtime",
-            "rid": "win10-x64"
-          },
-          "runtimes/win10-x64/lib/uap10.0/WatsonRegistrationUtility.winmd": {
-            "assetType": "runtime",
-            "rid": "win10-x64"
-          },
-          "runtimes/win10-x64/native/WatsonRegistrationUtility.dll": {
-            "assetType": "native",
-            "rid": "win10-x64"
-          },
-          "runtimes/win10-x86/lib/uap10.0/Microsoft.Azure.Mobile.Crashes.dll": {
-            "assetType": "runtime",
-            "rid": "win10-x86"
-          },
-          "runtimes/win10-x86/lib/uap10.0/WatsonRegistrationUtility.winmd": {
-            "assetType": "runtime",
-            "rid": "win10-x86"
-          },
-          "runtimes/win10-x86/native/WatsonRegistrationUtility.dll": {
-            "assetType": "native",
-            "rid": "win10-x86"
-          }
-        }
-      },
-      "Microsoft.Azure.Mobile.Distribute/0.14.2": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Azure.Mobile": "0.14.2"
-        },
-        "compile": {
-          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Microsoft.Azure.Mobile.Distribute.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Microsoft.Azure.Mobile.Distribute.dll": {}
-        }
-      },
-      "Microsoft.Azure.Mobile.Push/0.14.2": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Azure.Mobile": "0.14.2"
-        },
-        "compile": {
-          "lib/uap10.0/Microsoft.Azure.Mobile.Push.dll": {}
-        },
-        "runtime": {
-          "lib/uap10.0/Microsoft.Azure.Mobile.Push.dll": {}
-        }
-      },
       "Microsoft.CSharp/4.0.1": {
         "type": "package",
         "dependencies": {
@@ -171,7 +159,7 @@
           "lib/netcore50/Microsoft.CSharp.dll": {}
         }
       },
-      "Microsoft.Net.Native.Compiler/1.7.0": {
+      "Microsoft.Net.Native.Compiler/1.7.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.Net.Native.SharedLibrary-arm": "1.7.0",
@@ -381,14 +369,14 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.NETCore.UniversalWindowsPlatform/5.4.0": {
+      "Microsoft.NETCore.UniversalWindowsPlatform/6.0.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore": "5.0.2",
           "Microsoft.NETCore.Portable.Compatibility": "1.0.2",
           "Microsoft.NETCore.Runtime.CoreCLR": "1.0.3",
           "Microsoft.NETCore.Targets": "1.0.2",
-          "Microsoft.Net.Native.Compiler": "1.7.0",
+          "Microsoft.Net.Native.Compiler": "1.7.1",
           "Microsoft.Win32.Primitives": "4.0.1",
           "System.Collections.NonGeneric": "4.0.1",
           "System.Collections.Specialized": "4.0.1",
@@ -421,6 +409,9 @@
           "System.Threading.Overlapped": "4.0.1",
           "System.Xml.XmlDocument": "4.0.1",
           "System.Xml.XmlSerializer": "4.0.11"
+        },
+        "compile": {
+          "ref/netcore50/_._": {}
         }
       },
       "Microsoft.NETCore.Windows.ApiSets/1.0.1": {
@@ -2632,6 +2623,63 @@
       }
     },
     "UAP,Version=v10.0.14393/win10-arm": {
+      "Microsoft.AppCenter/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
+          "Newtonsoft.Json": "6.0.1",
+          "sqlite-net-pcl": "1.3.1"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.AppCenter.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.AppCenter.dll": {}
+        }
+      },
+      "Microsoft.AppCenter.Analytics/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AppCenter": "1.0.0"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.AppCenter.Analytics.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.AppCenter.Analytics.dll": {}
+        }
+      },
+      "Microsoft.AppCenter.Crashes/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AppCenter": "1.0.0"
+        },
+        "compile": {
+          "ref/uap10.0/Microsoft.AppCenter.Crashes.dll": {}
+        },
+        "runtime": {
+          "runtimes/win10-arm/lib/uap10.0/Microsoft.AppCenter.Crashes.dll": {},
+          "runtimes/win10-arm/lib/uap10.0/WatsonRegistrationUtility.winmd": {}
+        },
+        "native": {
+          "runtimes/win10-arm/native/WatsonRegistrationUtility.dll": {}
+        },
+        "build": {
+          "build/uap10.0/Microsoft.AppCenter.Crashes.targets": {}
+        }
+      },
+      "Microsoft.AppCenter.Push/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AppCenter": "1.0.0"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.AppCenter.Push.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.AppCenter.Push.dll": {}
+        }
+      },
       "Microsoft.ApplicationInsights/2.4.0": {
         "type": "package",
         "dependencies": {
@@ -2671,75 +2719,6 @@
           "lib/win81/Microsoft.ApplicationInsights.Extensibility.Windows.dll": {}
         }
       },
-      "Microsoft.Azure.Mobile/0.14.2": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
-          "Newtonsoft.Json": "6.0.1",
-          "sqlite-net-pcl": "1.3.1"
-        },
-        "compile": {
-          "lib/uap10.0/Microsoft.Azure.Mobile.dll": {}
-        },
-        "runtime": {
-          "lib/uap10.0/Microsoft.Azure.Mobile.dll": {}
-        }
-      },
-      "Microsoft.Azure.Mobile.Analytics/0.14.2": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Azure.Mobile": "0.14.2"
-        },
-        "compile": {
-          "lib/uap10.0/Microsoft.Azure.Mobile.Analytics.dll": {}
-        },
-        "runtime": {
-          "lib/uap10.0/Microsoft.Azure.Mobile.Analytics.dll": {}
-        }
-      },
-      "Microsoft.Azure.Mobile.Crashes/0.14.2": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Azure.Mobile": "0.14.2"
-        },
-        "compile": {
-          "ref/uap10.0/Microsoft.Azure.Mobile.Crashes.dll": {}
-        },
-        "runtime": {
-          "runtimes/win10-arm/lib/uap10.0/Microsoft.Azure.Mobile.Crashes.dll": {},
-          "runtimes/win10-arm/lib/uap10.0/WatsonRegistrationUtility.winmd": {}
-        },
-        "native": {
-          "runtimes/win10-arm/native/WatsonRegistrationUtility.dll": {}
-        },
-        "build": {
-          "build/uap10.0/Microsoft.Azure.Mobile.Crashes.targets": {}
-        }
-      },
-      "Microsoft.Azure.Mobile.Distribute/0.14.2": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Azure.Mobile": "0.14.2"
-        },
-        "compile": {
-          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Microsoft.Azure.Mobile.Distribute.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Microsoft.Azure.Mobile.Distribute.dll": {}
-        }
-      },
-      "Microsoft.Azure.Mobile.Push/0.14.2": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Azure.Mobile": "0.14.2"
-        },
-        "compile": {
-          "lib/uap10.0/Microsoft.Azure.Mobile.Push.dll": {}
-        },
-        "runtime": {
-          "lib/uap10.0/Microsoft.Azure.Mobile.Push.dll": {}
-        }
-      },
       "Microsoft.CSharp/4.0.1": {
         "type": "package",
         "dependencies": {
@@ -2767,7 +2746,7 @@
           "lib/netcore50/Microsoft.CSharp.dll": {}
         }
       },
-      "Microsoft.Net.Native.Compiler/1.7.0": {
+      "Microsoft.Net.Native.Compiler/1.7.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.Net.Native.SharedLibrary-arm": "1.7.0",
@@ -2924,14 +2903,14 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.NETCore.UniversalWindowsPlatform/5.4.0": {
+      "Microsoft.NETCore.UniversalWindowsPlatform/6.0.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore": "5.0.2",
           "Microsoft.NETCore.Portable.Compatibility": "1.0.2",
           "Microsoft.NETCore.Runtime.CoreCLR": "1.0.3",
           "Microsoft.NETCore.Targets": "1.0.2",
-          "Microsoft.Net.Native.Compiler": "1.7.0",
+          "Microsoft.Net.Native.Compiler": "1.7.1",
           "Microsoft.Win32.Primitives": "4.0.1",
           "System.Collections.NonGeneric": "4.0.1",
           "System.Collections.Specialized": "4.0.1",
@@ -2963,7 +2942,11 @@
           "System.Text.Encoding.CodePages": "4.0.1",
           "System.Threading.Overlapped": "4.0.1",
           "System.Xml.XmlDocument": "4.0.1",
-          "System.Xml.XmlSerializer": "4.0.11"
+          "System.Xml.XmlSerializer": "4.0.11",
+          "runtime.win10-arm.Microsoft.NETCore.UniversalWindowsPlatform": "6.0.1"
+        },
+        "compile": {
+          "ref/netcore50/_._": {}
         }
       },
       "Microsoft.NETCore.Windows.ApiSets/1.0.1": {
@@ -3417,6 +3400,12 @@
         },
         "runtime": {
           "runtimes/win/lib/netcore50/System.Runtime.Extensions.dll": {}
+        }
+      },
+      "runtime.win10-arm.Microsoft.NETCore.UniversalWindowsPlatform/6.0.1": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard/_._": {}
         }
       },
       "runtime.win7.System.Private.Uri/4.3.0": {
@@ -5247,6 +5236,63 @@
       }
     },
     "UAP,Version=v10.0.14393/win10-arm-aot": {
+      "Microsoft.AppCenter/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
+          "Newtonsoft.Json": "6.0.1",
+          "sqlite-net-pcl": "1.3.1"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.AppCenter.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.AppCenter.dll": {}
+        }
+      },
+      "Microsoft.AppCenter.Analytics/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AppCenter": "1.0.0"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.AppCenter.Analytics.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.AppCenter.Analytics.dll": {}
+        }
+      },
+      "Microsoft.AppCenter.Crashes/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AppCenter": "1.0.0"
+        },
+        "compile": {
+          "ref/uap10.0/Microsoft.AppCenter.Crashes.dll": {}
+        },
+        "runtime": {
+          "runtimes/win10-arm/lib/uap10.0/Microsoft.AppCenter.Crashes.dll": {},
+          "runtimes/win10-arm/lib/uap10.0/WatsonRegistrationUtility.winmd": {}
+        },
+        "native": {
+          "runtimes/win10-arm/native/WatsonRegistrationUtility.dll": {}
+        },
+        "build": {
+          "build/uap10.0/Microsoft.AppCenter.Crashes.targets": {}
+        }
+      },
+      "Microsoft.AppCenter.Push/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AppCenter": "1.0.0"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.AppCenter.Push.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.AppCenter.Push.dll": {}
+        }
+      },
       "Microsoft.ApplicationInsights/2.4.0": {
         "type": "package",
         "dependencies": {
@@ -5286,75 +5332,6 @@
           "lib/win81/Microsoft.ApplicationInsights.Extensibility.Windows.dll": {}
         }
       },
-      "Microsoft.Azure.Mobile/0.14.2": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
-          "Newtonsoft.Json": "6.0.1",
-          "sqlite-net-pcl": "1.3.1"
-        },
-        "compile": {
-          "lib/uap10.0/Microsoft.Azure.Mobile.dll": {}
-        },
-        "runtime": {
-          "lib/uap10.0/Microsoft.Azure.Mobile.dll": {}
-        }
-      },
-      "Microsoft.Azure.Mobile.Analytics/0.14.2": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Azure.Mobile": "0.14.2"
-        },
-        "compile": {
-          "lib/uap10.0/Microsoft.Azure.Mobile.Analytics.dll": {}
-        },
-        "runtime": {
-          "lib/uap10.0/Microsoft.Azure.Mobile.Analytics.dll": {}
-        }
-      },
-      "Microsoft.Azure.Mobile.Crashes/0.14.2": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Azure.Mobile": "0.14.2"
-        },
-        "compile": {
-          "ref/uap10.0/Microsoft.Azure.Mobile.Crashes.dll": {}
-        },
-        "runtime": {
-          "runtimes/win10-arm/lib/uap10.0/Microsoft.Azure.Mobile.Crashes.dll": {},
-          "runtimes/win10-arm/lib/uap10.0/WatsonRegistrationUtility.winmd": {}
-        },
-        "native": {
-          "runtimes/win10-arm/native/WatsonRegistrationUtility.dll": {}
-        },
-        "build": {
-          "build/uap10.0/Microsoft.Azure.Mobile.Crashes.targets": {}
-        }
-      },
-      "Microsoft.Azure.Mobile.Distribute/0.14.2": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Azure.Mobile": "0.14.2"
-        },
-        "compile": {
-          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Microsoft.Azure.Mobile.Distribute.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Microsoft.Azure.Mobile.Distribute.dll": {}
-        }
-      },
-      "Microsoft.Azure.Mobile.Push/0.14.2": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Azure.Mobile": "0.14.2"
-        },
-        "compile": {
-          "lib/uap10.0/Microsoft.Azure.Mobile.Push.dll": {}
-        },
-        "runtime": {
-          "lib/uap10.0/Microsoft.Azure.Mobile.Push.dll": {}
-        }
-      },
       "Microsoft.CSharp/4.0.1": {
         "type": "package",
         "dependencies": {
@@ -5382,7 +5359,7 @@
           "lib/netcore50/Microsoft.CSharp.dll": {}
         }
       },
-      "Microsoft.Net.Native.Compiler/1.7.0": {
+      "Microsoft.Net.Native.Compiler/1.7.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.Net.Native.SharedLibrary-arm": "1.7.0",
@@ -5540,14 +5517,14 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.NETCore.UniversalWindowsPlatform/5.4.0": {
+      "Microsoft.NETCore.UniversalWindowsPlatform/6.0.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore": "5.0.2",
           "Microsoft.NETCore.Portable.Compatibility": "1.0.2",
           "Microsoft.NETCore.Runtime.CoreCLR": "1.0.3",
           "Microsoft.NETCore.Targets": "1.0.2",
-          "Microsoft.Net.Native.Compiler": "1.7.0",
+          "Microsoft.Net.Native.Compiler": "1.7.1",
           "Microsoft.Win32.Primitives": "4.0.1",
           "System.Collections.NonGeneric": "4.0.1",
           "System.Collections.Specialized": "4.0.1",
@@ -5579,7 +5556,11 @@
           "System.Text.Encoding.CodePages": "4.0.1",
           "System.Threading.Overlapped": "4.0.1",
           "System.Xml.XmlDocument": "4.0.1",
-          "System.Xml.XmlSerializer": "4.0.11"
+          "System.Xml.XmlSerializer": "4.0.11",
+          "runtime.win10-arm-aot.Microsoft.NETCore.UniversalWindowsPlatform": "6.0.1"
+        },
+        "compile": {
+          "ref/netcore50/_._": {}
         }
       },
       "Microsoft.NETCore.Windows.ApiSets/1.0.1": {
@@ -6078,6 +6059,12 @@
         },
         "runtime": {
           "runtimes/aot/lib/netcore50/System.Runtime.Extensions.dll": {}
+        }
+      },
+      "runtime.win10-arm-aot.Microsoft.NETCore.UniversalWindowsPlatform/6.0.1": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard/_._": {}
         }
       },
       "runtime.win10-arm-aot.runtime.native.System.IO.Compression/4.0.1": {
@@ -7901,6 +7888,63 @@
       }
     },
     "UAP,Version=v10.0.14393/win10-x64": {
+      "Microsoft.AppCenter/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
+          "Newtonsoft.Json": "6.0.1",
+          "sqlite-net-pcl": "1.3.1"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.AppCenter.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.AppCenter.dll": {}
+        }
+      },
+      "Microsoft.AppCenter.Analytics/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AppCenter": "1.0.0"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.AppCenter.Analytics.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.AppCenter.Analytics.dll": {}
+        }
+      },
+      "Microsoft.AppCenter.Crashes/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AppCenter": "1.0.0"
+        },
+        "compile": {
+          "ref/uap10.0/Microsoft.AppCenter.Crashes.dll": {}
+        },
+        "runtime": {
+          "runtimes/win10-x64/lib/uap10.0/Microsoft.AppCenter.Crashes.dll": {},
+          "runtimes/win10-x64/lib/uap10.0/WatsonRegistrationUtility.winmd": {}
+        },
+        "native": {
+          "runtimes/win10-x64/native/WatsonRegistrationUtility.dll": {}
+        },
+        "build": {
+          "build/uap10.0/Microsoft.AppCenter.Crashes.targets": {}
+        }
+      },
+      "Microsoft.AppCenter.Push/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AppCenter": "1.0.0"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.AppCenter.Push.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.AppCenter.Push.dll": {}
+        }
+      },
       "Microsoft.ApplicationInsights/2.4.0": {
         "type": "package",
         "dependencies": {
@@ -7940,75 +7984,6 @@
           "lib/win81/Microsoft.ApplicationInsights.Extensibility.Windows.dll": {}
         }
       },
-      "Microsoft.Azure.Mobile/0.14.2": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
-          "Newtonsoft.Json": "6.0.1",
-          "sqlite-net-pcl": "1.3.1"
-        },
-        "compile": {
-          "lib/uap10.0/Microsoft.Azure.Mobile.dll": {}
-        },
-        "runtime": {
-          "lib/uap10.0/Microsoft.Azure.Mobile.dll": {}
-        }
-      },
-      "Microsoft.Azure.Mobile.Analytics/0.14.2": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Azure.Mobile": "0.14.2"
-        },
-        "compile": {
-          "lib/uap10.0/Microsoft.Azure.Mobile.Analytics.dll": {}
-        },
-        "runtime": {
-          "lib/uap10.0/Microsoft.Azure.Mobile.Analytics.dll": {}
-        }
-      },
-      "Microsoft.Azure.Mobile.Crashes/0.14.2": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Azure.Mobile": "0.14.2"
-        },
-        "compile": {
-          "ref/uap10.0/Microsoft.Azure.Mobile.Crashes.dll": {}
-        },
-        "runtime": {
-          "runtimes/win10-x64/lib/uap10.0/Microsoft.Azure.Mobile.Crashes.dll": {},
-          "runtimes/win10-x64/lib/uap10.0/WatsonRegistrationUtility.winmd": {}
-        },
-        "native": {
-          "runtimes/win10-x64/native/WatsonRegistrationUtility.dll": {}
-        },
-        "build": {
-          "build/uap10.0/Microsoft.Azure.Mobile.Crashes.targets": {}
-        }
-      },
-      "Microsoft.Azure.Mobile.Distribute/0.14.2": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Azure.Mobile": "0.14.2"
-        },
-        "compile": {
-          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Microsoft.Azure.Mobile.Distribute.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Microsoft.Azure.Mobile.Distribute.dll": {}
-        }
-      },
-      "Microsoft.Azure.Mobile.Push/0.14.2": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Azure.Mobile": "0.14.2"
-        },
-        "compile": {
-          "lib/uap10.0/Microsoft.Azure.Mobile.Push.dll": {}
-        },
-        "runtime": {
-          "lib/uap10.0/Microsoft.Azure.Mobile.Push.dll": {}
-        }
-      },
       "Microsoft.CSharp/4.0.1": {
         "type": "package",
         "dependencies": {
@@ -8036,7 +8011,7 @@
           "lib/netcore50/Microsoft.CSharp.dll": {}
         }
       },
-      "Microsoft.Net.Native.Compiler/1.7.0": {
+      "Microsoft.Net.Native.Compiler/1.7.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.Net.Native.SharedLibrary-arm": "1.7.0",
@@ -8196,14 +8171,14 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.NETCore.UniversalWindowsPlatform/5.4.0": {
+      "Microsoft.NETCore.UniversalWindowsPlatform/6.0.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore": "5.0.2",
           "Microsoft.NETCore.Portable.Compatibility": "1.0.2",
           "Microsoft.NETCore.Runtime.CoreCLR": "1.0.3",
           "Microsoft.NETCore.Targets": "1.0.2",
-          "Microsoft.Net.Native.Compiler": "1.7.0",
+          "Microsoft.Net.Native.Compiler": "1.7.1",
           "Microsoft.Win32.Primitives": "4.0.1",
           "System.Collections.NonGeneric": "4.0.1",
           "System.Collections.Specialized": "4.0.1",
@@ -8235,7 +8210,11 @@
           "System.Text.Encoding.CodePages": "4.0.1",
           "System.Threading.Overlapped": "4.0.1",
           "System.Xml.XmlDocument": "4.0.1",
-          "System.Xml.XmlSerializer": "4.0.11"
+          "System.Xml.XmlSerializer": "4.0.11",
+          "runtime.win10-x64.Microsoft.NETCore.UniversalWindowsPlatform": "6.0.1"
+        },
+        "compile": {
+          "ref/netcore50/_._": {}
         }
       },
       "Microsoft.NETCore.Windows.ApiSets/1.0.1": {
@@ -8689,6 +8668,12 @@
         },
         "runtime": {
           "runtimes/win/lib/netcore50/System.Runtime.Extensions.dll": {}
+        }
+      },
+      "runtime.win10-x64.Microsoft.NETCore.UniversalWindowsPlatform/6.0.1": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard/_._": {}
         }
       },
       "runtime.win7-x64.Microsoft.NETCore.Jit/1.0.3": {
@@ -10525,6 +10510,63 @@
       }
     },
     "UAP,Version=v10.0.14393/win10-x64-aot": {
+      "Microsoft.AppCenter/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
+          "Newtonsoft.Json": "6.0.1",
+          "sqlite-net-pcl": "1.3.1"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.AppCenter.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.AppCenter.dll": {}
+        }
+      },
+      "Microsoft.AppCenter.Analytics/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AppCenter": "1.0.0"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.AppCenter.Analytics.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.AppCenter.Analytics.dll": {}
+        }
+      },
+      "Microsoft.AppCenter.Crashes/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AppCenter": "1.0.0"
+        },
+        "compile": {
+          "ref/uap10.0/Microsoft.AppCenter.Crashes.dll": {}
+        },
+        "runtime": {
+          "runtimes/win10-x64/lib/uap10.0/Microsoft.AppCenter.Crashes.dll": {},
+          "runtimes/win10-x64/lib/uap10.0/WatsonRegistrationUtility.winmd": {}
+        },
+        "native": {
+          "runtimes/win10-x64/native/WatsonRegistrationUtility.dll": {}
+        },
+        "build": {
+          "build/uap10.0/Microsoft.AppCenter.Crashes.targets": {}
+        }
+      },
+      "Microsoft.AppCenter.Push/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AppCenter": "1.0.0"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.AppCenter.Push.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.AppCenter.Push.dll": {}
+        }
+      },
       "Microsoft.ApplicationInsights/2.4.0": {
         "type": "package",
         "dependencies": {
@@ -10564,75 +10606,6 @@
           "lib/win81/Microsoft.ApplicationInsights.Extensibility.Windows.dll": {}
         }
       },
-      "Microsoft.Azure.Mobile/0.14.2": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
-          "Newtonsoft.Json": "6.0.1",
-          "sqlite-net-pcl": "1.3.1"
-        },
-        "compile": {
-          "lib/uap10.0/Microsoft.Azure.Mobile.dll": {}
-        },
-        "runtime": {
-          "lib/uap10.0/Microsoft.Azure.Mobile.dll": {}
-        }
-      },
-      "Microsoft.Azure.Mobile.Analytics/0.14.2": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Azure.Mobile": "0.14.2"
-        },
-        "compile": {
-          "lib/uap10.0/Microsoft.Azure.Mobile.Analytics.dll": {}
-        },
-        "runtime": {
-          "lib/uap10.0/Microsoft.Azure.Mobile.Analytics.dll": {}
-        }
-      },
-      "Microsoft.Azure.Mobile.Crashes/0.14.2": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Azure.Mobile": "0.14.2"
-        },
-        "compile": {
-          "ref/uap10.0/Microsoft.Azure.Mobile.Crashes.dll": {}
-        },
-        "runtime": {
-          "runtimes/win10-x64/lib/uap10.0/Microsoft.Azure.Mobile.Crashes.dll": {},
-          "runtimes/win10-x64/lib/uap10.0/WatsonRegistrationUtility.winmd": {}
-        },
-        "native": {
-          "runtimes/win10-x64/native/WatsonRegistrationUtility.dll": {}
-        },
-        "build": {
-          "build/uap10.0/Microsoft.Azure.Mobile.Crashes.targets": {}
-        }
-      },
-      "Microsoft.Azure.Mobile.Distribute/0.14.2": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Azure.Mobile": "0.14.2"
-        },
-        "compile": {
-          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Microsoft.Azure.Mobile.Distribute.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Microsoft.Azure.Mobile.Distribute.dll": {}
-        }
-      },
-      "Microsoft.Azure.Mobile.Push/0.14.2": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Azure.Mobile": "0.14.2"
-        },
-        "compile": {
-          "lib/uap10.0/Microsoft.Azure.Mobile.Push.dll": {}
-        },
-        "runtime": {
-          "lib/uap10.0/Microsoft.Azure.Mobile.Push.dll": {}
-        }
-      },
       "Microsoft.CSharp/4.0.1": {
         "type": "package",
         "dependencies": {
@@ -10660,7 +10633,7 @@
           "lib/netcore50/Microsoft.CSharp.dll": {}
         }
       },
-      "Microsoft.Net.Native.Compiler/1.7.0": {
+      "Microsoft.Net.Native.Compiler/1.7.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.Net.Native.SharedLibrary-arm": "1.7.0",
@@ -10821,14 +10794,14 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.NETCore.UniversalWindowsPlatform/5.4.0": {
+      "Microsoft.NETCore.UniversalWindowsPlatform/6.0.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore": "5.0.2",
           "Microsoft.NETCore.Portable.Compatibility": "1.0.2",
           "Microsoft.NETCore.Runtime.CoreCLR": "1.0.3",
           "Microsoft.NETCore.Targets": "1.0.2",
-          "Microsoft.Net.Native.Compiler": "1.7.0",
+          "Microsoft.Net.Native.Compiler": "1.7.1",
           "Microsoft.Win32.Primitives": "4.0.1",
           "System.Collections.NonGeneric": "4.0.1",
           "System.Collections.Specialized": "4.0.1",
@@ -10860,7 +10833,11 @@
           "System.Text.Encoding.CodePages": "4.0.1",
           "System.Threading.Overlapped": "4.0.1",
           "System.Xml.XmlDocument": "4.0.1",
-          "System.Xml.XmlSerializer": "4.0.11"
+          "System.Xml.XmlSerializer": "4.0.11",
+          "runtime.win10-x64-aot.Microsoft.NETCore.UniversalWindowsPlatform": "6.0.1"
+        },
+        "compile": {
+          "ref/netcore50/_._": {}
         }
       },
       "Microsoft.NETCore.Windows.ApiSets/1.0.1": {
@@ -11359,6 +11336,12 @@
         },
         "runtime": {
           "runtimes/aot/lib/netcore50/System.Runtime.Extensions.dll": {}
+        }
+      },
+      "runtime.win10-x64-aot.Microsoft.NETCore.UniversalWindowsPlatform/6.0.1": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard/_._": {}
         }
       },
       "runtime.win10-x64-aot.runtime.native.System.IO.Compression/4.0.1": {
@@ -13188,6 +13171,63 @@
       }
     },
     "UAP,Version=v10.0.14393/win10-x86": {
+      "Microsoft.AppCenter/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
+          "Newtonsoft.Json": "6.0.1",
+          "sqlite-net-pcl": "1.3.1"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.AppCenter.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.AppCenter.dll": {}
+        }
+      },
+      "Microsoft.AppCenter.Analytics/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AppCenter": "1.0.0"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.AppCenter.Analytics.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.AppCenter.Analytics.dll": {}
+        }
+      },
+      "Microsoft.AppCenter.Crashes/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AppCenter": "1.0.0"
+        },
+        "compile": {
+          "ref/uap10.0/Microsoft.AppCenter.Crashes.dll": {}
+        },
+        "runtime": {
+          "runtimes/win10-x86/lib/uap10.0/Microsoft.AppCenter.Crashes.dll": {},
+          "runtimes/win10-x86/lib/uap10.0/WatsonRegistrationUtility.winmd": {}
+        },
+        "native": {
+          "runtimes/win10-x86/native/WatsonRegistrationUtility.dll": {}
+        },
+        "build": {
+          "build/uap10.0/Microsoft.AppCenter.Crashes.targets": {}
+        }
+      },
+      "Microsoft.AppCenter.Push/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AppCenter": "1.0.0"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.AppCenter.Push.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.AppCenter.Push.dll": {}
+        }
+      },
       "Microsoft.ApplicationInsights/2.4.0": {
         "type": "package",
         "dependencies": {
@@ -13227,75 +13267,6 @@
           "lib/win81/Microsoft.ApplicationInsights.Extensibility.Windows.dll": {}
         }
       },
-      "Microsoft.Azure.Mobile/0.14.2": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
-          "Newtonsoft.Json": "6.0.1",
-          "sqlite-net-pcl": "1.3.1"
-        },
-        "compile": {
-          "lib/uap10.0/Microsoft.Azure.Mobile.dll": {}
-        },
-        "runtime": {
-          "lib/uap10.0/Microsoft.Azure.Mobile.dll": {}
-        }
-      },
-      "Microsoft.Azure.Mobile.Analytics/0.14.2": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Azure.Mobile": "0.14.2"
-        },
-        "compile": {
-          "lib/uap10.0/Microsoft.Azure.Mobile.Analytics.dll": {}
-        },
-        "runtime": {
-          "lib/uap10.0/Microsoft.Azure.Mobile.Analytics.dll": {}
-        }
-      },
-      "Microsoft.Azure.Mobile.Crashes/0.14.2": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Azure.Mobile": "0.14.2"
-        },
-        "compile": {
-          "ref/uap10.0/Microsoft.Azure.Mobile.Crashes.dll": {}
-        },
-        "runtime": {
-          "runtimes/win10-x86/lib/uap10.0/Microsoft.Azure.Mobile.Crashes.dll": {},
-          "runtimes/win10-x86/lib/uap10.0/WatsonRegistrationUtility.winmd": {}
-        },
-        "native": {
-          "runtimes/win10-x86/native/WatsonRegistrationUtility.dll": {}
-        },
-        "build": {
-          "build/uap10.0/Microsoft.Azure.Mobile.Crashes.targets": {}
-        }
-      },
-      "Microsoft.Azure.Mobile.Distribute/0.14.2": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Azure.Mobile": "0.14.2"
-        },
-        "compile": {
-          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Microsoft.Azure.Mobile.Distribute.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Microsoft.Azure.Mobile.Distribute.dll": {}
-        }
-      },
-      "Microsoft.Azure.Mobile.Push/0.14.2": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Azure.Mobile": "0.14.2"
-        },
-        "compile": {
-          "lib/uap10.0/Microsoft.Azure.Mobile.Push.dll": {}
-        },
-        "runtime": {
-          "lib/uap10.0/Microsoft.Azure.Mobile.Push.dll": {}
-        }
-      },
       "Microsoft.CSharp/4.0.1": {
         "type": "package",
         "dependencies": {
@@ -13323,7 +13294,7 @@
           "lib/netcore50/Microsoft.CSharp.dll": {}
         }
       },
-      "Microsoft.Net.Native.Compiler/1.7.0": {
+      "Microsoft.Net.Native.Compiler/1.7.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.Net.Native.SharedLibrary-arm": "1.7.0",
@@ -13483,14 +13454,14 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.NETCore.UniversalWindowsPlatform/5.4.0": {
+      "Microsoft.NETCore.UniversalWindowsPlatform/6.0.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore": "5.0.2",
           "Microsoft.NETCore.Portable.Compatibility": "1.0.2",
           "Microsoft.NETCore.Runtime.CoreCLR": "1.0.3",
           "Microsoft.NETCore.Targets": "1.0.2",
-          "Microsoft.Net.Native.Compiler": "1.7.0",
+          "Microsoft.Net.Native.Compiler": "1.7.1",
           "Microsoft.Win32.Primitives": "4.0.1",
           "System.Collections.NonGeneric": "4.0.1",
           "System.Collections.Specialized": "4.0.1",
@@ -13522,7 +13493,11 @@
           "System.Text.Encoding.CodePages": "4.0.1",
           "System.Threading.Overlapped": "4.0.1",
           "System.Xml.XmlDocument": "4.0.1",
-          "System.Xml.XmlSerializer": "4.0.11"
+          "System.Xml.XmlSerializer": "4.0.11",
+          "runtime.win10-x86.Microsoft.NETCore.UniversalWindowsPlatform": "6.0.1"
+        },
+        "compile": {
+          "ref/netcore50/_._": {}
         }
       },
       "Microsoft.NETCore.Windows.ApiSets/1.0.1": {
@@ -13976,6 +13951,12 @@
         },
         "runtime": {
           "runtimes/win/lib/netcore50/System.Runtime.Extensions.dll": {}
+        }
+      },
+      "runtime.win10-x86.Microsoft.NETCore.UniversalWindowsPlatform/6.0.1": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard/_._": {}
         }
       },
       "runtime.win7-x86.Microsoft.NETCore.Jit/1.0.3": {
@@ -15812,6 +15793,63 @@
       }
     },
     "UAP,Version=v10.0.14393/win10-x86-aot": {
+      "Microsoft.AppCenter/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
+          "Newtonsoft.Json": "6.0.1",
+          "sqlite-net-pcl": "1.3.1"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.AppCenter.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.AppCenter.dll": {}
+        }
+      },
+      "Microsoft.AppCenter.Analytics/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AppCenter": "1.0.0"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.AppCenter.Analytics.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.AppCenter.Analytics.dll": {}
+        }
+      },
+      "Microsoft.AppCenter.Crashes/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AppCenter": "1.0.0"
+        },
+        "compile": {
+          "ref/uap10.0/Microsoft.AppCenter.Crashes.dll": {}
+        },
+        "runtime": {
+          "runtimes/win10-x86/lib/uap10.0/Microsoft.AppCenter.Crashes.dll": {},
+          "runtimes/win10-x86/lib/uap10.0/WatsonRegistrationUtility.winmd": {}
+        },
+        "native": {
+          "runtimes/win10-x86/native/WatsonRegistrationUtility.dll": {}
+        },
+        "build": {
+          "build/uap10.0/Microsoft.AppCenter.Crashes.targets": {}
+        }
+      },
+      "Microsoft.AppCenter.Push/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AppCenter": "1.0.0"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.AppCenter.Push.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.AppCenter.Push.dll": {}
+        }
+      },
       "Microsoft.ApplicationInsights/2.4.0": {
         "type": "package",
         "dependencies": {
@@ -15851,75 +15889,6 @@
           "lib/win81/Microsoft.ApplicationInsights.Extensibility.Windows.dll": {}
         }
       },
-      "Microsoft.Azure.Mobile/0.14.2": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
-          "Newtonsoft.Json": "6.0.1",
-          "sqlite-net-pcl": "1.3.1"
-        },
-        "compile": {
-          "lib/uap10.0/Microsoft.Azure.Mobile.dll": {}
-        },
-        "runtime": {
-          "lib/uap10.0/Microsoft.Azure.Mobile.dll": {}
-        }
-      },
-      "Microsoft.Azure.Mobile.Analytics/0.14.2": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Azure.Mobile": "0.14.2"
-        },
-        "compile": {
-          "lib/uap10.0/Microsoft.Azure.Mobile.Analytics.dll": {}
-        },
-        "runtime": {
-          "lib/uap10.0/Microsoft.Azure.Mobile.Analytics.dll": {}
-        }
-      },
-      "Microsoft.Azure.Mobile.Crashes/0.14.2": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Azure.Mobile": "0.14.2"
-        },
-        "compile": {
-          "ref/uap10.0/Microsoft.Azure.Mobile.Crashes.dll": {}
-        },
-        "runtime": {
-          "runtimes/win10-x86/lib/uap10.0/Microsoft.Azure.Mobile.Crashes.dll": {},
-          "runtimes/win10-x86/lib/uap10.0/WatsonRegistrationUtility.winmd": {}
-        },
-        "native": {
-          "runtimes/win10-x86/native/WatsonRegistrationUtility.dll": {}
-        },
-        "build": {
-          "build/uap10.0/Microsoft.Azure.Mobile.Crashes.targets": {}
-        }
-      },
-      "Microsoft.Azure.Mobile.Distribute/0.14.2": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Azure.Mobile": "0.14.2"
-        },
-        "compile": {
-          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Microsoft.Azure.Mobile.Distribute.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Microsoft.Azure.Mobile.Distribute.dll": {}
-        }
-      },
-      "Microsoft.Azure.Mobile.Push/0.14.2": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Azure.Mobile": "0.14.2"
-        },
-        "compile": {
-          "lib/uap10.0/Microsoft.Azure.Mobile.Push.dll": {}
-        },
-        "runtime": {
-          "lib/uap10.0/Microsoft.Azure.Mobile.Push.dll": {}
-        }
-      },
       "Microsoft.CSharp/4.0.1": {
         "type": "package",
         "dependencies": {
@@ -15947,7 +15916,7 @@
           "lib/netcore50/Microsoft.CSharp.dll": {}
         }
       },
-      "Microsoft.Net.Native.Compiler/1.7.0": {
+      "Microsoft.Net.Native.Compiler/1.7.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.Net.Native.SharedLibrary-arm": "1.7.0",
@@ -16108,14 +16077,14 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.NETCore.UniversalWindowsPlatform/5.4.0": {
+      "Microsoft.NETCore.UniversalWindowsPlatform/6.0.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore": "5.0.2",
           "Microsoft.NETCore.Portable.Compatibility": "1.0.2",
           "Microsoft.NETCore.Runtime.CoreCLR": "1.0.3",
           "Microsoft.NETCore.Targets": "1.0.2",
-          "Microsoft.Net.Native.Compiler": "1.7.0",
+          "Microsoft.Net.Native.Compiler": "1.7.1",
           "Microsoft.Win32.Primitives": "4.0.1",
           "System.Collections.NonGeneric": "4.0.1",
           "System.Collections.Specialized": "4.0.1",
@@ -16147,7 +16116,11 @@
           "System.Text.Encoding.CodePages": "4.0.1",
           "System.Threading.Overlapped": "4.0.1",
           "System.Xml.XmlDocument": "4.0.1",
-          "System.Xml.XmlSerializer": "4.0.11"
+          "System.Xml.XmlSerializer": "4.0.11",
+          "runtime.win10-x86-aot.Microsoft.NETCore.UniversalWindowsPlatform": "6.0.1"
+        },
+        "compile": {
+          "ref/netcore50/_._": {}
         }
       },
       "Microsoft.NETCore.Windows.ApiSets/1.0.1": {
@@ -16646,6 +16619,12 @@
         },
         "runtime": {
           "runtimes/aot/lib/netcore50/System.Runtime.Extensions.dll": {}
+        }
+      },
+      "runtime.win10-x86-aot.Microsoft.NETCore.UniversalWindowsPlatform/6.0.1": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard/_._": {}
         }
       },
       "runtime.win10-x86-aot.runtime.native.System.IO.Compression/4.0.1": {
@@ -18476,6 +18455,80 @@
     }
   },
   "libraries": {
+    "Microsoft.AppCenter/1.0.0": {
+      "sha512": "+0HHgL0u0w6Dfsk92A9E+7R84SNDmqNvdg3TKNln5Sz/RJs38vRI5tXStmo3gmVGcKEDuGndgPYCWPepVTynFA==",
+      "type": "package",
+      "path": "microsoft.appcenter/1.0.0",
+      "files": [
+        "lib/MonoAndroid403/Microsoft.AppCenter.Android.Bindings.dll",
+        "lib/MonoAndroid403/Microsoft.AppCenter.dll",
+        "lib/Xamarin.iOS10/Microsoft.AppCenter.dll",
+        "lib/Xamarin.iOS10/Microsoft.AppCenter.iOS.Bindings.dll",
+        "lib/netstandard1.0/Microsoft.AppCenter.dll",
+        "lib/portable-net45%2Bwin8%2Bwpa81%2Bwp8/Microsoft.AppCenter.dll",
+        "lib/uap10.0/Microsoft.AppCenter.dll",
+        "microsoft.appcenter.1.0.0.nupkg.sha512",
+        "microsoft.appcenter.nuspec"
+      ]
+    },
+    "Microsoft.AppCenter.Analytics/1.0.0": {
+      "sha512": "inqWM7blJORdaCW3VgpZP5QMlJMVvU8Cnm2zXGct/TuPRY2ZRKPLIgAbLhjtUYJaWS7irH8TZNwqqnCw0irlvg==",
+      "type": "package",
+      "path": "microsoft.appcenter.analytics/1.0.0",
+      "files": [
+        "lib/MonoAndroid403/Microsoft.AppCenter.Analytics.Android.Bindings.dll",
+        "lib/MonoAndroid403/Microsoft.AppCenter.Analytics.dll",
+        "lib/Xamarin.iOS10/Microsoft.AppCenter.Analytics.dll",
+        "lib/Xamarin.iOS10/Microsoft.AppCenter.Analytics.iOS.Bindings.dll",
+        "lib/netstandard1.0/Microsoft.AppCenter.Analytics.dll",
+        "lib/portable-net45%2Bwin8%2Bwpa81%2Bwp8/Microsoft.AppCenter.Analytics.dll",
+        "lib/uap10.0/Microsoft.AppCenter.Analytics.dll",
+        "microsoft.appcenter.analytics.1.0.0.nupkg.sha512",
+        "microsoft.appcenter.analytics.nuspec"
+      ]
+    },
+    "Microsoft.AppCenter.Crashes/1.0.0": {
+      "sha512": "g1usBuN8hrmUlFsHKkHh5HsGZVipEApQonQf/UIC2aUwACGQr16/rVBu/LLFWcsKgiPLnQ49MJ6riJLqIQKVwA==",
+      "type": "package",
+      "path": "microsoft.appcenter.crashes/1.0.0",
+      "files": [
+        "build/uap10.0/Microsoft.AppCenter.Crashes.targets",
+        "lib/MonoAndroid403/Microsoft.AppCenter.Crashes.Android.Bindings.dll",
+        "lib/MonoAndroid403/Microsoft.AppCenter.Crashes.dll",
+        "lib/Xamarin.iOS10/Microsoft.AppCenter.Crashes.dll",
+        "lib/Xamarin.iOS10/Microsoft.AppCenter.Crashes.iOS.Bindings.dll",
+        "lib/netstandard1.0/Microsoft.AppCenter.Crashes.dll",
+        "lib/portable-net45%2Bwin8%2Bwpa81%2Bwp8/Microsoft.AppCenter.Crashes.dll",
+        "microsoft.appcenter.crashes.1.0.0.nupkg.sha512",
+        "microsoft.appcenter.crashes.nuspec",
+        "ref/uap10.0/Microsoft.AppCenter.Crashes.dll",
+        "runtimes/win10-arm/lib/uap10.0/Microsoft.AppCenter.Crashes.dll",
+        "runtimes/win10-arm/lib/uap10.0/WatsonRegistrationUtility.winmd",
+        "runtimes/win10-arm/native/WatsonRegistrationUtility.dll",
+        "runtimes/win10-x64/lib/uap10.0/Microsoft.AppCenter.Crashes.dll",
+        "runtimes/win10-x64/lib/uap10.0/WatsonRegistrationUtility.winmd",
+        "runtimes/win10-x64/native/WatsonRegistrationUtility.dll",
+        "runtimes/win10-x86/lib/uap10.0/Microsoft.AppCenter.Crashes.dll",
+        "runtimes/win10-x86/lib/uap10.0/WatsonRegistrationUtility.winmd",
+        "runtimes/win10-x86/native/WatsonRegistrationUtility.dll"
+      ]
+    },
+    "Microsoft.AppCenter.Push/1.0.0": {
+      "sha512": "itiFqI8/QjUI3kHIaV2ppDXD/4z7YhQh409MqbVJBYpoqfgHclITgMR8Xlzm0Aj8SskGK4Uy9v4OBSRrscyubg==",
+      "type": "package",
+      "path": "microsoft.appcenter.push/1.0.0",
+      "files": [
+        "lib/MonoAndroid403/Microsoft.AppCenter.Push.Android.Bindings.dll",
+        "lib/MonoAndroid403/Microsoft.AppCenter.Push.dll",
+        "lib/Xamarin.iOS10/Microsoft.AppCenter.Push.dll",
+        "lib/Xamarin.iOS10/Microsoft.AppCenter.Push.iOS.Bindings.dll",
+        "lib/netstandard1.0/Microsoft.AppCenter.Push.dll",
+        "lib/portable-net45%2Bwin8%2Bwpa81%2Bwp8/Microsoft.AppCenter.Push.dll",
+        "lib/uap10.0/Microsoft.AppCenter.Push.dll",
+        "microsoft.appcenter.push.1.0.0.nupkg.sha512",
+        "microsoft.appcenter.push.nuspec"
+      ]
+    },
     "Microsoft.ApplicationInsights/2.4.0": {
       "sha512": "4dX/zu3Psz9oM3ErU64xfOHuSxOwMxN6q5RabSkeYbX42Yn6dR/kDToqjs+txCRjrfHUxyYjfeJHu+MbCfvAsg==",
       "type": "package",
@@ -18526,90 +18579,6 @@
         "lib/wpa81/Microsoft.ApplicationInsights.Extensibility.Windows.dll",
         "microsoft.applicationinsights.windowsapps.1.1.1.nupkg.sha512",
         "microsoft.applicationinsights.windowsapps.nuspec"
-      ]
-    },
-    "Microsoft.Azure.Mobile/0.14.2": {
-      "sha512": "KQa0MPS5Nu5gV+mK/9jmKzIeF8/D6/uoONvLAl6oGZIxms1f8w06yvPSmI64zNrz7yXVZnH3Tu+rIswrZpaKcw==",
-      "type": "package",
-      "path": "microsoft.azure.mobile/0.14.2",
-      "files": [
-        "lib/MonoAndroid403/Microsoft.Azure.Mobile.Android.Bindings.dll",
-        "lib/MonoAndroid403/Microsoft.Azure.Mobile.dll",
-        "lib/Xamarin.iOS10/Microsoft.Azure.Mobile.dll",
-        "lib/Xamarin.iOS10/Microsoft.Azure.Mobile.iOS.Bindings.dll",
-        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Microsoft.Azure.Mobile.dll",
-        "lib/uap10.0/Microsoft.Azure.Mobile.dll",
-        "microsoft.azure.mobile.0.14.2.nupkg.sha512",
-        "microsoft.azure.mobile.nuspec"
-      ]
-    },
-    "Microsoft.Azure.Mobile.Analytics/0.14.2": {
-      "sha512": "Im1XMceOJieH3b8CfZuQVOz5vD0ueg1ZN7D17ACHRR6UdnY8voXQCHrmn6x6672HIcCr6zXOw7g/sypfjjW3CQ==",
-      "type": "package",
-      "path": "microsoft.azure.mobile.analytics/0.14.2",
-      "files": [
-        "lib/MonoAndroid403/Microsoft.Azure.Mobile.Analytics.Android.Bindings.dll",
-        "lib/MonoAndroid403/Microsoft.Azure.Mobile.Analytics.dll",
-        "lib/Xamarin.iOS10/Microsoft.Azure.Mobile.Analytics.dll",
-        "lib/Xamarin.iOS10/Microsoft.Azure.Mobile.Analytics.iOS.Bindings.dll",
-        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Microsoft.Azure.Mobile.Analytics.dll",
-        "lib/uap10.0/Microsoft.Azure.Mobile.Analytics.dll",
-        "microsoft.azure.mobile.analytics.0.14.2.nupkg.sha512",
-        "microsoft.azure.mobile.analytics.nuspec"
-      ]
-    },
-    "Microsoft.Azure.Mobile.Crashes/0.14.2": {
-      "sha512": "pn/QOCNgzMh7PXsGYD4lsSoIcPBwTRmqsXJka6JIdisp/yaVMI7lKz69JQK1MSlggYrH/jj11+FtT+g047Ugrg==",
-      "type": "package",
-      "path": "microsoft.azure.mobile.crashes/0.14.2",
-      "files": [
-        "build/uap10.0/Microsoft.Azure.Mobile.Crashes.targets",
-        "lib/MonoAndroid403/Microsoft.Azure.Mobile.Crashes.Android.Bindings.dll",
-        "lib/MonoAndroid403/Microsoft.Azure.Mobile.Crashes.dll",
-        "lib/Xamarin.iOS10/Microsoft.Azure.Mobile.Crashes.dll",
-        "lib/Xamarin.iOS10/Microsoft.Azure.Mobile.Crashes.iOS.Bindings.dll",
-        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Microsoft.Azure.Mobile.Crashes.dll",
-        "microsoft.azure.mobile.crashes.0.14.2.nupkg.sha512",
-        "microsoft.azure.mobile.crashes.nuspec",
-        "ref/uap10.0/Microsoft.Azure.Mobile.Crashes.dll",
-        "runtimes/win10-arm/lib/uap10.0/Microsoft.Azure.Mobile.Crashes.dll",
-        "runtimes/win10-arm/lib/uap10.0/WatsonRegistrationUtility.winmd",
-        "runtimes/win10-arm/native/WatsonRegistrationUtility.dll",
-        "runtimes/win10-x64/lib/uap10.0/Microsoft.Azure.Mobile.Crashes.dll",
-        "runtimes/win10-x64/lib/uap10.0/WatsonRegistrationUtility.winmd",
-        "runtimes/win10-x64/native/WatsonRegistrationUtility.dll",
-        "runtimes/win10-x86/lib/uap10.0/Microsoft.Azure.Mobile.Crashes.dll",
-        "runtimes/win10-x86/lib/uap10.0/WatsonRegistrationUtility.winmd",
-        "runtimes/win10-x86/native/WatsonRegistrationUtility.dll"
-      ]
-    },
-    "Microsoft.Azure.Mobile.Distribute/0.14.2": {
-      "sha512": "IoAftm46fyGMpfe8Fe1Sm4hrgn3LyHw1yy8QuKfeIhhm06qHgGxK4Az9MoV7y2yli36UseR1guZOKs0EjvvDzA==",
-      "type": "package",
-      "path": "microsoft.azure.mobile.distribute/0.14.2",
-      "files": [
-        "lib/MonoAndroid403/Microsoft.Azure.Mobile.Distribute.Android.Bindings.dll",
-        "lib/MonoAndroid403/Microsoft.Azure.Mobile.Distribute.dll",
-        "lib/Xamarin.iOS10/Microsoft.Azure.Mobile.Distribute.dll",
-        "lib/Xamarin.iOS10/Microsoft.Azure.Mobile.Distribute.iOS.Bindings.dll",
-        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Microsoft.Azure.Mobile.Distribute.dll",
-        "microsoft.azure.mobile.distribute.0.14.2.nupkg.sha512",
-        "microsoft.azure.mobile.distribute.nuspec"
-      ]
-    },
-    "Microsoft.Azure.Mobile.Push/0.14.2": {
-      "sha512": "SsixHs6nUJ7xoLx1GiPT45xbYxSnMg6SWWK2KuRNZiT2Fn7qsPcAEO7Bm6EQgFvxoytOGvBr2Hu4gLaadTNyEQ==",
-      "type": "package",
-      "path": "microsoft.azure.mobile.push/0.14.2",
-      "files": [
-        "lib/MonoAndroid403/Microsoft.Azure.Mobile.Push.Android.Bindings.dll",
-        "lib/MonoAndroid403/Microsoft.Azure.Mobile.Push.dll",
-        "lib/Xamarin.iOS10/Microsoft.Azure.Mobile.Push.dll",
-        "lib/Xamarin.iOS10/Microsoft.Azure.Mobile.Push.iOS.Bindings.dll",
-        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Microsoft.Azure.Mobile.Push.dll",
-        "lib/uap10.0/Microsoft.Azure.Mobile.Push.dll",
-        "microsoft.azure.mobile.push.0.14.2.nupkg.sha512",
-        "microsoft.azure.mobile.push.nuspec"
       ]
     },
     "Microsoft.CSharp/4.0.1": {
@@ -18669,14 +18638,14 @@
         "ref/xamarinwatchos10/_._"
       ]
     },
-    "Microsoft.Net.Native.Compiler/1.7.0": {
-      "sha512": "g46kdqDNrrVx3CiUoSe2QDkUPi/hsncwGK2k0jti5e6PZkiUWlplhkjGHS/Xrp4dx6+KhC3tuUtStHaNX7emMQ==",
+    "Microsoft.Net.Native.Compiler/1.7.1": {
+      "sha512": "P55mWSgc8zLrk2eoRxd3T3QPVXXKrqD/DypC+It8wSgZfaUl2/o31bCOR+aWq1NtxDwDnCPGNVsmo/bmgIeJtA==",
       "type": "package",
-      "path": "microsoft.net.native.compiler/1.7.0",
+      "path": "microsoft.net.native.compiler/1.7.1",
       "files": [
         "build/Microsoft.Net.Native.Compiler.props",
         "build/Microsoft.Net.Native.Compiler.targets",
-        "microsoft.net.native.compiler.1.7.0.nupkg.sha512",
+        "microsoft.net.native.compiler.1.7.1.nupkg.sha512",
         "microsoft.net.native.compiler.nuspec",
         "tools/LibraryXML/Callisto.rd.xml",
         "tools/LibraryXML/GalaSoft.MvvmLight.Extras.Win8.rd.xml",
@@ -20904,15 +20873,291 @@
         "runtime.json"
       ]
     },
-    "Microsoft.NETCore.UniversalWindowsPlatform/5.4.0": {
-      "sha512": "n4RuBnnZXGZbpXJb49CuZxc6Yu8WeRTzkg1dutyT8a4PczoST7uRVZpH3bRAOa6+dpulzP0qUH60+xPGxmzsWA==",
+    "Microsoft.NETCore.UniversalWindowsPlatform/6.0.1": {
+      "sha512": "2RI4q8FfR0S50V4YdZIZtzfyA2Bo4+jJHQXG+TDN7D4mPrFiIswIq8HVeDWS9xZsDwz23z7d/T2qi4rZa60Sig==",
       "type": "package",
-      "path": "microsoft.netcore.universalwindowsplatform/5.4.0",
+      "path": "microsoft.netcore.universalwindowsplatform/6.0.1",
       "files": [
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "microsoft.netcore.universalwindowsplatform.5.4.0.nupkg.sha512",
-        "microsoft.netcore.universalwindowsplatform.nuspec"
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "microsoft.netcore.universalwindowsplatform.6.0.1.nupkg.sha512",
+        "microsoft.netcore.universalwindowsplatform.nuspec",
+        "ref/netcore50/_._",
+        "ref/uap10.0.15138/Microsoft.CSharp.dll",
+        "ref/uap10.0.15138/Microsoft.CSharp.xml",
+        "ref/uap10.0.15138/Microsoft.VisualBasic.dll",
+        "ref/uap10.0.15138/Microsoft.VisualBasic.xml",
+        "ref/uap10.0.15138/Microsoft.Win32.Primitives.dll",
+        "ref/uap10.0.15138/Microsoft.Win32.Primitives.xml",
+        "ref/uap10.0.15138/System.AppContext.dll",
+        "ref/uap10.0.15138/System.AppContext.xml",
+        "ref/uap10.0.15138/System.Buffers.dll",
+        "ref/uap10.0.15138/System.Buffers.xml",
+        "ref/uap10.0.15138/System.Collections.Concurrent.dll",
+        "ref/uap10.0.15138/System.Collections.Concurrent.xml",
+        "ref/uap10.0.15138/System.Collections.Immutable.dll",
+        "ref/uap10.0.15138/System.Collections.Immutable.xml",
+        "ref/uap10.0.15138/System.Collections.NonGeneric.dll",
+        "ref/uap10.0.15138/System.Collections.NonGeneric.xml",
+        "ref/uap10.0.15138/System.Collections.Specialized.dll",
+        "ref/uap10.0.15138/System.Collections.Specialized.xml",
+        "ref/uap10.0.15138/System.Collections.dll",
+        "ref/uap10.0.15138/System.Collections.xml",
+        "ref/uap10.0.15138/System.ComponentModel.Annotations.dll",
+        "ref/uap10.0.15138/System.ComponentModel.Annotations.xml",
+        "ref/uap10.0.15138/System.ComponentModel.Composition.dll",
+        "ref/uap10.0.15138/System.ComponentModel.DataAnnotations.dll",
+        "ref/uap10.0.15138/System.ComponentModel.EventBasedAsync.dll",
+        "ref/uap10.0.15138/System.ComponentModel.EventBasedAsync.xml",
+        "ref/uap10.0.15138/System.ComponentModel.Primitives.dll",
+        "ref/uap10.0.15138/System.ComponentModel.Primitives.xml",
+        "ref/uap10.0.15138/System.ComponentModel.TypeConverter.dll",
+        "ref/uap10.0.15138/System.ComponentModel.TypeConverter.xml",
+        "ref/uap10.0.15138/System.ComponentModel.dll",
+        "ref/uap10.0.15138/System.ComponentModel.xml",
+        "ref/uap10.0.15138/System.Configuration.dll",
+        "ref/uap10.0.15138/System.Console.dll",
+        "ref/uap10.0.15138/System.Console.xml",
+        "ref/uap10.0.15138/System.Core.dll",
+        "ref/uap10.0.15138/System.Data.Common.dll",
+        "ref/uap10.0.15138/System.Data.Common.xml",
+        "ref/uap10.0.15138/System.Data.SqlClient.dll",
+        "ref/uap10.0.15138/System.Data.SqlClient.xml",
+        "ref/uap10.0.15138/System.Data.dll",
+        "ref/uap10.0.15138/System.Diagnostics.Contracts.dll",
+        "ref/uap10.0.15138/System.Diagnostics.Contracts.xml",
+        "ref/uap10.0.15138/System.Diagnostics.Debug.dll",
+        "ref/uap10.0.15138/System.Diagnostics.Debug.xml",
+        "ref/uap10.0.15138/System.Diagnostics.FileVersionInfo.dll",
+        "ref/uap10.0.15138/System.Diagnostics.FileVersionInfo.xml",
+        "ref/uap10.0.15138/System.Diagnostics.Process.dll",
+        "ref/uap10.0.15138/System.Diagnostics.Process.xml",
+        "ref/uap10.0.15138/System.Diagnostics.StackTrace.dll",
+        "ref/uap10.0.15138/System.Diagnostics.StackTrace.xml",
+        "ref/uap10.0.15138/System.Diagnostics.TextWriterTraceListener.dll",
+        "ref/uap10.0.15138/System.Diagnostics.TextWriterTraceListener.xml",
+        "ref/uap10.0.15138/System.Diagnostics.Tools.dll",
+        "ref/uap10.0.15138/System.Diagnostics.Tools.xml",
+        "ref/uap10.0.15138/System.Diagnostics.TraceSource.dll",
+        "ref/uap10.0.15138/System.Diagnostics.TraceSource.xml",
+        "ref/uap10.0.15138/System.Diagnostics.Tracing.dll",
+        "ref/uap10.0.15138/System.Diagnostics.Tracing.xml",
+        "ref/uap10.0.15138/System.Drawing.Primitives.dll",
+        "ref/uap10.0.15138/System.Drawing.Primitives.xml",
+        "ref/uap10.0.15138/System.Drawing.dll",
+        "ref/uap10.0.15138/System.Dynamic.Runtime.dll",
+        "ref/uap10.0.15138/System.Dynamic.Runtime.xml",
+        "ref/uap10.0.15138/System.Globalization.Calendars.dll",
+        "ref/uap10.0.15138/System.Globalization.Calendars.xml",
+        "ref/uap10.0.15138/System.Globalization.Extensions.dll",
+        "ref/uap10.0.15138/System.Globalization.Extensions.xml",
+        "ref/uap10.0.15138/System.Globalization.dll",
+        "ref/uap10.0.15138/System.Globalization.xml",
+        "ref/uap10.0.15138/System.IO.Compression.FileSystem.dll",
+        "ref/uap10.0.15138/System.IO.Compression.ZipFile.dll",
+        "ref/uap10.0.15138/System.IO.Compression.ZipFile.xml",
+        "ref/uap10.0.15138/System.IO.Compression.dll",
+        "ref/uap10.0.15138/System.IO.Compression.xml",
+        "ref/uap10.0.15138/System.IO.FileSystem.DriveInfo.dll",
+        "ref/uap10.0.15138/System.IO.FileSystem.DriveInfo.xml",
+        "ref/uap10.0.15138/System.IO.FileSystem.Primitives.dll",
+        "ref/uap10.0.15138/System.IO.FileSystem.Primitives.xml",
+        "ref/uap10.0.15138/System.IO.FileSystem.Watcher.dll",
+        "ref/uap10.0.15138/System.IO.FileSystem.Watcher.xml",
+        "ref/uap10.0.15138/System.IO.FileSystem.dll",
+        "ref/uap10.0.15138/System.IO.FileSystem.xml",
+        "ref/uap10.0.15138/System.IO.IsolatedStorage.dll",
+        "ref/uap10.0.15138/System.IO.IsolatedStorage.xml",
+        "ref/uap10.0.15138/System.IO.MemoryMappedFiles.dll",
+        "ref/uap10.0.15138/System.IO.MemoryMappedFiles.xml",
+        "ref/uap10.0.15138/System.IO.Pipes.dll",
+        "ref/uap10.0.15138/System.IO.Pipes.xml",
+        "ref/uap10.0.15138/System.IO.Ports.dll",
+        "ref/uap10.0.15138/System.IO.Ports.xml",
+        "ref/uap10.0.15138/System.IO.UnmanagedMemoryStream.dll",
+        "ref/uap10.0.15138/System.IO.UnmanagedMemoryStream.xml",
+        "ref/uap10.0.15138/System.IO.dll",
+        "ref/uap10.0.15138/System.IO.xml",
+        "ref/uap10.0.15138/System.Linq.Expressions.dll",
+        "ref/uap10.0.15138/System.Linq.Expressions.xml",
+        "ref/uap10.0.15138/System.Linq.Parallel.dll",
+        "ref/uap10.0.15138/System.Linq.Parallel.xml",
+        "ref/uap10.0.15138/System.Linq.Queryable.dll",
+        "ref/uap10.0.15138/System.Linq.Queryable.xml",
+        "ref/uap10.0.15138/System.Linq.dll",
+        "ref/uap10.0.15138/System.Linq.xml",
+        "ref/uap10.0.15138/System.Net.Http.Rtc.dll",
+        "ref/uap10.0.15138/System.Net.Http.Rtc.xml",
+        "ref/uap10.0.15138/System.Net.Http.dll",
+        "ref/uap10.0.15138/System.Net.Http.xml",
+        "ref/uap10.0.15138/System.Net.HttpListener.dll",
+        "ref/uap10.0.15138/System.Net.HttpListener.xml",
+        "ref/uap10.0.15138/System.Net.Mail.dll",
+        "ref/uap10.0.15138/System.Net.Mail.xml",
+        "ref/uap10.0.15138/System.Net.NameResolution.dll",
+        "ref/uap10.0.15138/System.Net.NameResolution.xml",
+        "ref/uap10.0.15138/System.Net.NetworkInformation.dll",
+        "ref/uap10.0.15138/System.Net.NetworkInformation.xml",
+        "ref/uap10.0.15138/System.Net.Ping.dll",
+        "ref/uap10.0.15138/System.Net.Ping.xml",
+        "ref/uap10.0.15138/System.Net.Primitives.dll",
+        "ref/uap10.0.15138/System.Net.Primitives.xml",
+        "ref/uap10.0.15138/System.Net.Requests.dll",
+        "ref/uap10.0.15138/System.Net.Requests.xml",
+        "ref/uap10.0.15138/System.Net.Security.dll",
+        "ref/uap10.0.15138/System.Net.Security.xml",
+        "ref/uap10.0.15138/System.Net.ServicePoint.dll",
+        "ref/uap10.0.15138/System.Net.ServicePoint.xml",
+        "ref/uap10.0.15138/System.Net.Sockets.dll",
+        "ref/uap10.0.15138/System.Net.Sockets.xml",
+        "ref/uap10.0.15138/System.Net.WebClient.dll",
+        "ref/uap10.0.15138/System.Net.WebClient.xml",
+        "ref/uap10.0.15138/System.Net.WebHeaderCollection.dll",
+        "ref/uap10.0.15138/System.Net.WebHeaderCollection.xml",
+        "ref/uap10.0.15138/System.Net.WebProxy.dll",
+        "ref/uap10.0.15138/System.Net.WebProxy.xml",
+        "ref/uap10.0.15138/System.Net.WebSockets.Client.dll",
+        "ref/uap10.0.15138/System.Net.WebSockets.Client.xml",
+        "ref/uap10.0.15138/System.Net.WebSockets.dll",
+        "ref/uap10.0.15138/System.Net.WebSockets.xml",
+        "ref/uap10.0.15138/System.Net.dll",
+        "ref/uap10.0.15138/System.Numerics.Vectors.WindowsRuntime.dll",
+        "ref/uap10.0.15138/System.Numerics.Vectors.dll",
+        "ref/uap10.0.15138/System.Numerics.Vectors.xml",
+        "ref/uap10.0.15138/System.Numerics.dll",
+        "ref/uap10.0.15138/System.ObjectModel.dll",
+        "ref/uap10.0.15138/System.ObjectModel.xml",
+        "ref/uap10.0.15138/System.Reflection.Context.dll",
+        "ref/uap10.0.15138/System.Reflection.Context.xml",
+        "ref/uap10.0.15138/System.Reflection.DispatchProxy.dll",
+        "ref/uap10.0.15138/System.Reflection.DispatchProxy.xml",
+        "ref/uap10.0.15138/System.Reflection.Extensions.dll",
+        "ref/uap10.0.15138/System.Reflection.Extensions.xml",
+        "ref/uap10.0.15138/System.Reflection.Metadata.dll",
+        "ref/uap10.0.15138/System.Reflection.Metadata.xml",
+        "ref/uap10.0.15138/System.Reflection.Primitives.dll",
+        "ref/uap10.0.15138/System.Reflection.Primitives.xml",
+        "ref/uap10.0.15138/System.Reflection.TypeExtensions.dll",
+        "ref/uap10.0.15138/System.Reflection.TypeExtensions.xml",
+        "ref/uap10.0.15138/System.Reflection.dll",
+        "ref/uap10.0.15138/System.Reflection.xml",
+        "ref/uap10.0.15138/System.Resources.Reader.dll",
+        "ref/uap10.0.15138/System.Resources.Reader.xml",
+        "ref/uap10.0.15138/System.Resources.ResourceManager.dll",
+        "ref/uap10.0.15138/System.Resources.ResourceManager.xml",
+        "ref/uap10.0.15138/System.Resources.Writer.dll",
+        "ref/uap10.0.15138/System.Resources.Writer.xml",
+        "ref/uap10.0.15138/System.Runtime.CompilerServices.VisualC.dll",
+        "ref/uap10.0.15138/System.Runtime.CompilerServices.VisualC.xml",
+        "ref/uap10.0.15138/System.Runtime.Extensions.dll",
+        "ref/uap10.0.15138/System.Runtime.Extensions.xml",
+        "ref/uap10.0.15138/System.Runtime.Handles.dll",
+        "ref/uap10.0.15138/System.Runtime.Handles.xml",
+        "ref/uap10.0.15138/System.Runtime.InteropServices.RuntimeInformation.dll",
+        "ref/uap10.0.15138/System.Runtime.InteropServices.RuntimeInformation.xml",
+        "ref/uap10.0.15138/System.Runtime.InteropServices.WindowsRuntime.dll",
+        "ref/uap10.0.15138/System.Runtime.InteropServices.WindowsRuntime.xml",
+        "ref/uap10.0.15138/System.Runtime.InteropServices.dll",
+        "ref/uap10.0.15138/System.Runtime.InteropServices.xml",
+        "ref/uap10.0.15138/System.Runtime.Numerics.dll",
+        "ref/uap10.0.15138/System.Runtime.Numerics.xml",
+        "ref/uap10.0.15138/System.Runtime.Serialization.Formatters.dll",
+        "ref/uap10.0.15138/System.Runtime.Serialization.Formatters.xml",
+        "ref/uap10.0.15138/System.Runtime.Serialization.Json.dll",
+        "ref/uap10.0.15138/System.Runtime.Serialization.Json.xml",
+        "ref/uap10.0.15138/System.Runtime.Serialization.Primitives.dll",
+        "ref/uap10.0.15138/System.Runtime.Serialization.Primitives.xml",
+        "ref/uap10.0.15138/System.Runtime.Serialization.Xml.dll",
+        "ref/uap10.0.15138/System.Runtime.Serialization.Xml.xml",
+        "ref/uap10.0.15138/System.Runtime.Serialization.dll",
+        "ref/uap10.0.15138/System.Runtime.WindowsRuntime.UI.Xaml.dll",
+        "ref/uap10.0.15138/System.Runtime.WindowsRuntime.dll",
+        "ref/uap10.0.15138/System.Runtime.dll",
+        "ref/uap10.0.15138/System.Runtime.xml",
+        "ref/uap10.0.15138/System.Security.AccessControl.dll",
+        "ref/uap10.0.15138/System.Security.AccessControl.xml",
+        "ref/uap10.0.15138/System.Security.Claims.dll",
+        "ref/uap10.0.15138/System.Security.Claims.xml",
+        "ref/uap10.0.15138/System.Security.Cryptography.Algorithms.dll",
+        "ref/uap10.0.15138/System.Security.Cryptography.Algorithms.xml",
+        "ref/uap10.0.15138/System.Security.Cryptography.Cng.dll",
+        "ref/uap10.0.15138/System.Security.Cryptography.Cng.xml",
+        "ref/uap10.0.15138/System.Security.Cryptography.Csp.dll",
+        "ref/uap10.0.15138/System.Security.Cryptography.Csp.xml",
+        "ref/uap10.0.15138/System.Security.Cryptography.Encoding.dll",
+        "ref/uap10.0.15138/System.Security.Cryptography.Encoding.xml",
+        "ref/uap10.0.15138/System.Security.Cryptography.Primitives.dll",
+        "ref/uap10.0.15138/System.Security.Cryptography.Primitives.xml",
+        "ref/uap10.0.15138/System.Security.Cryptography.X509Certificates.dll",
+        "ref/uap10.0.15138/System.Security.Cryptography.X509Certificates.xml",
+        "ref/uap10.0.15138/System.Security.Principal.Windows.dll",
+        "ref/uap10.0.15138/System.Security.Principal.Windows.xml",
+        "ref/uap10.0.15138/System.Security.Principal.dll",
+        "ref/uap10.0.15138/System.Security.Principal.xml",
+        "ref/uap10.0.15138/System.Security.SecureString.dll",
+        "ref/uap10.0.15138/System.Security.SecureString.xml",
+        "ref/uap10.0.15138/System.Security.dll",
+        "ref/uap10.0.15138/System.ServiceModel.Duplex.dll",
+        "ref/uap10.0.15138/System.ServiceModel.Http.dll",
+        "ref/uap10.0.15138/System.ServiceModel.NetTcp.dll",
+        "ref/uap10.0.15138/System.ServiceModel.Primitives.dll",
+        "ref/uap10.0.15138/System.ServiceModel.Security.dll",
+        "ref/uap10.0.15138/System.ServiceModel.Web.dll",
+        "ref/uap10.0.15138/System.ServiceModel.dll",
+        "ref/uap10.0.15138/System.ServiceProcess.dll",
+        "ref/uap10.0.15138/System.Text.Encoding.CodePages.dll",
+        "ref/uap10.0.15138/System.Text.Encoding.CodePages.xml",
+        "ref/uap10.0.15138/System.Text.Encoding.Extensions.dll",
+        "ref/uap10.0.15138/System.Text.Encoding.Extensions.xml",
+        "ref/uap10.0.15138/System.Text.Encoding.dll",
+        "ref/uap10.0.15138/System.Text.Encoding.xml",
+        "ref/uap10.0.15138/System.Text.RegularExpressions.dll",
+        "ref/uap10.0.15138/System.Text.RegularExpressions.xml",
+        "ref/uap10.0.15138/System.Threading.Overlapped.dll",
+        "ref/uap10.0.15138/System.Threading.Overlapped.xml",
+        "ref/uap10.0.15138/System.Threading.Tasks.Dataflow.dll",
+        "ref/uap10.0.15138/System.Threading.Tasks.Dataflow.xml",
+        "ref/uap10.0.15138/System.Threading.Tasks.Parallel.dll",
+        "ref/uap10.0.15138/System.Threading.Tasks.Parallel.xml",
+        "ref/uap10.0.15138/System.Threading.Tasks.dll",
+        "ref/uap10.0.15138/System.Threading.Tasks.xml",
+        "ref/uap10.0.15138/System.Threading.Thread.dll",
+        "ref/uap10.0.15138/System.Threading.Thread.xml",
+        "ref/uap10.0.15138/System.Threading.ThreadPool.dll",
+        "ref/uap10.0.15138/System.Threading.ThreadPool.xml",
+        "ref/uap10.0.15138/System.Threading.Timer.dll",
+        "ref/uap10.0.15138/System.Threading.Timer.xml",
+        "ref/uap10.0.15138/System.Threading.dll",
+        "ref/uap10.0.15138/System.Threading.xml",
+        "ref/uap10.0.15138/System.Transactions.Local.dll",
+        "ref/uap10.0.15138/System.Transactions.Local.xml",
+        "ref/uap10.0.15138/System.Transactions.dll",
+        "ref/uap10.0.15138/System.ValueTuple.dll",
+        "ref/uap10.0.15138/System.ValueTuple.xml",
+        "ref/uap10.0.15138/System.Web.HttpUtility.dll",
+        "ref/uap10.0.15138/System.Web.HttpUtility.xml",
+        "ref/uap10.0.15138/System.Web.dll",
+        "ref/uap10.0.15138/System.Windows.dll",
+        "ref/uap10.0.15138/System.Xml.Linq.dll",
+        "ref/uap10.0.15138/System.Xml.ReaderWriter.dll",
+        "ref/uap10.0.15138/System.Xml.ReaderWriter.xml",
+        "ref/uap10.0.15138/System.Xml.Serialization.dll",
+        "ref/uap10.0.15138/System.Xml.XDocument.dll",
+        "ref/uap10.0.15138/System.Xml.XDocument.xml",
+        "ref/uap10.0.15138/System.Xml.XPath.XDocument.dll",
+        "ref/uap10.0.15138/System.Xml.XPath.XDocument.xml",
+        "ref/uap10.0.15138/System.Xml.XPath.dll",
+        "ref/uap10.0.15138/System.Xml.XPath.xml",
+        "ref/uap10.0.15138/System.Xml.XmlDocument.dll",
+        "ref/uap10.0.15138/System.Xml.XmlDocument.xml",
+        "ref/uap10.0.15138/System.Xml.XmlSerializer.dll",
+        "ref/uap10.0.15138/System.Xml.XmlSerializer.xml",
+        "ref/uap10.0.15138/System.Xml.dll",
+        "ref/uap10.0.15138/System.dll",
+        "ref/uap10.0.15138/WindowsBase.dll",
+        "ref/uap10.0.15138/mscorlib.dll",
+        "ref/uap10.0.15138/netstandard.dll",
+        "runtime.json"
       ]
     },
     "Microsoft.NETCore.Windows.ApiSets/1.0.1": {
@@ -21022,8 +21267,6 @@
       "type": "package",
       "path": "newtonsoft.json/6.0.1",
       "files": [
-        "Newtonsoft.Json.6.0.1.nupkg.sha512",
-        "Newtonsoft.Json.nuspec",
         "lib/net20/Newtonsoft.Json.dll",
         "lib/net20/Newtonsoft.Json.xml",
         "lib/net35/Newtonsoft.Json.dll",
@@ -21038,6 +21281,8 @@
         "lib/portable-net40+sl5+wp80+win8+monotouch+monoandroid/Newtonsoft.Json.xml",
         "lib/portable-net45+wp80+win8/Newtonsoft.Json.dll",
         "lib/portable-net45+wp80+win8/Newtonsoft.Json.xml",
+        "newtonsoft.json.6.0.1.nupkg.sha512",
+        "newtonsoft.json.nuspec",
         "tools/install.ps1"
       ]
     },
@@ -21944,6 +22189,183 @@
         "runtimes/win/lib/netstandard1.5/System.Runtime.Extensions.dll"
       ]
     },
+    "runtime.win10-arm-aot.Microsoft.NETCore.UniversalWindowsPlatform/6.0.1": {
+      "sha512": "ZGShwJB9yNwHyM+w7g8int9gmurykzvy+SWv74+lCul0ddTmtI9WhXrAg3Dyub9urV7/lUtUjCjH+cSC5/5t7A==",
+      "type": "package",
+      "path": "runtime.win10-arm-aot.microsoft.netcore.universalwindowsplatform/6.0.1",
+      "files": [
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "ref/netstandard/_._",
+        "runtime.win10-arm-aot.microsoft.netcore.universalwindowsplatform.6.0.1.nupkg.sha512",
+        "runtime.win10-arm-aot.microsoft.netcore.universalwindowsplatform.nuspec",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/Microsoft.CSharp.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/Microsoft.VisualBasic.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/Microsoft.Win32.Primitives.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.AppContext.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Buffers.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Collections.Concurrent.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Collections.Immutable.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Collections.NonGeneric.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Collections.Specialized.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Collections.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.ComponentModel.Annotations.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.ComponentModel.Composition.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.ComponentModel.DataAnnotations.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.ComponentModel.EventBasedAsync.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.ComponentModel.Primitives.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.ComponentModel.TypeConverter.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.ComponentModel.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Configuration.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Console.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Core.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Data.Common.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Data.SqlClient.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Data.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Diagnostics.Contracts.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Diagnostics.Debug.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Diagnostics.DiagnosticSource.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Diagnostics.FileVersionInfo.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Diagnostics.Process.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Diagnostics.StackTrace.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Diagnostics.TextWriterTraceListener.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Diagnostics.Tools.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Diagnostics.TraceSource.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Diagnostics.Tracing.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Drawing.Primitives.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Drawing.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Dynamic.Runtime.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Globalization.Calendars.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Globalization.Extensions.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Globalization.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.IO.Compression.FileSystem.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.IO.Compression.ZipFile.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.IO.Compression.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.IO.FileSystem.DriveInfo.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.IO.FileSystem.Primitives.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.IO.FileSystem.Watcher.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.IO.FileSystem.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.IO.IsolatedStorage.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.IO.MemoryMappedFiles.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.IO.Pipes.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.IO.Ports.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.IO.UnmanagedMemoryStream.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.IO.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Linq.Expressions.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Linq.Parallel.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Linq.Queryable.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Linq.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Net.Http.Rtc.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Net.Http.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Net.HttpListener.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Net.Mail.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Net.NameResolution.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Net.NetworkInformation.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Net.Ping.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Net.Primitives.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Net.Requests.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Net.Security.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Net.ServicePoint.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Net.Sockets.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Net.WebClient.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Net.WebHeaderCollection.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Net.WebProxy.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Net.WebSockets.Client.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Net.WebSockets.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Net.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Numerics.Vectors.WindowsRuntime.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Numerics.Vectors.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Numerics.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.ObjectModel.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Private.DataContractSerialization.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Private.Reflection.Metadata.Ecma335.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Private.ServiceModel.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Private.Uri.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Private.Xml.Linq.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Private.Xml.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Reflection.Context.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Reflection.DispatchProxy.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Reflection.Emit.ILGeneration.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Reflection.Emit.Lightweight.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Reflection.Emit.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Reflection.Extensions.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Reflection.Metadata.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Reflection.Primitives.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Reflection.TypeExtensions.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Reflection.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Resources.Reader.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Resources.ResourceManager.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Resources.Writer.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Runtime.CompilerServices.VisualC.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Runtime.Extensions.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Runtime.Handles.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Runtime.InteropServices.RuntimeInformation.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Runtime.InteropServices.WindowsRuntime.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Runtime.InteropServices.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Runtime.Numerics.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Runtime.Serialization.Formatters.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Runtime.Serialization.Json.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Runtime.Serialization.Primitives.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Runtime.Serialization.Xml.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Runtime.Serialization.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Runtime.WindowsRuntime.UI.Xaml.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Runtime.WindowsRuntime.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Runtime.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Security.AccessControl.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Security.Claims.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Security.Cryptography.Algorithms.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Security.Cryptography.Cng.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Security.Cryptography.Csp.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Security.Cryptography.Encoding.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Security.Cryptography.Primitives.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Security.Cryptography.X509Certificates.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Security.Principal.Windows.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Security.Principal.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Security.SecureString.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Security.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.ServiceModel.Duplex.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.ServiceModel.Http.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.ServiceModel.NetTcp.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.ServiceModel.Primitives.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.ServiceModel.Security.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.ServiceModel.Web.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.ServiceModel.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.ServiceProcess.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Text.Encoding.CodePages.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Text.Encoding.Extensions.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Text.Encoding.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Text.RegularExpressions.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Threading.Overlapped.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Threading.Tasks.Dataflow.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Threading.Tasks.Extensions.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Threading.Tasks.Parallel.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Threading.Tasks.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Threading.Thread.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Threading.ThreadPool.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Threading.Timer.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Threading.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Transactions.Local.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Transactions.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.ValueTuple.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Web.HttpUtility.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Web.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Windows.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Xml.Linq.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Xml.ReaderWriter.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Xml.Serialization.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Xml.XDocument.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Xml.XPath.XDocument.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Xml.XPath.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Xml.XmlDocument.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Xml.XmlSerializer.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.Xml.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/System.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/WindowsBase.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/mscorlib.dll",
+        "runtimes/win10-arm-aot/lib/uap10.0.15138/netstandard.dll",
+        "runtimes/win10-arm-aot/nativeassets/uap10.0.15138/clrcompression.dll"
+      ]
+    },
     "runtime.win10-arm-aot.runtime.native.System.IO.Compression/4.0.1": {
       "sha512": "fzsKrHHfrv6wpLE1sxAHcWoB9vpAyoNjxVTnBJkzeXow2ZivR1H7wdpnsoKXIIb0d2EzYrrezHeHy4gI6tqqTA==",
       "type": "package",
@@ -21954,6 +22376,359 @@
         "runtime.win10-arm-aot.runtime.native.system.io.compression.4.0.1.nupkg.sha512",
         "runtime.win10-arm-aot.runtime.native.system.io.compression.nuspec",
         "runtimes/win10-arm-aot/lib/netcore50/clrcompression.dll"
+      ]
+    },
+    "runtime.win10-arm.Microsoft.NETCore.UniversalWindowsPlatform/6.0.1": {
+      "sha512": "GaE6GmyEmK2NX2PMfBJGGzLQSUWYO18LDbbCVaNJecnaa0XdBLFOouBoI8X19CcJVww62ugzwM75JjfHw60Wnw==",
+      "type": "package",
+      "path": "runtime.win10-arm.microsoft.netcore.universalwindowsplatform/6.0.1",
+      "files": [
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "ref/netstandard/_._",
+        "runtime.win10-arm.microsoft.netcore.universalwindowsplatform.6.0.1.nupkg.sha512",
+        "runtime.win10-arm.microsoft.netcore.universalwindowsplatform.nuspec",
+        "runtimes/win10-arm/lib/uap10.0.15138/Microsoft.CSharp.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/Microsoft.VisualBasic.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/Microsoft.Win32.Primitives.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.AppContext.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Buffers.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Collections.Concurrent.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Collections.Immutable.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Collections.NonGeneric.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Collections.Specialized.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Collections.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.ComponentModel.Annotations.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.ComponentModel.Composition.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.ComponentModel.DataAnnotations.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.ComponentModel.EventBasedAsync.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.ComponentModel.Primitives.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.ComponentModel.TypeConverter.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.ComponentModel.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Configuration.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Console.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Core.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Data.Common.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Data.SqlClient.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Data.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Diagnostics.Contracts.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Diagnostics.Debug.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Diagnostics.DiagnosticSource.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Diagnostics.FileVersionInfo.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Diagnostics.Process.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Diagnostics.StackTrace.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Diagnostics.TextWriterTraceListener.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Diagnostics.Tools.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Diagnostics.TraceSource.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Diagnostics.Tracing.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Drawing.Primitives.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Drawing.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Dynamic.Runtime.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Globalization.Calendars.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Globalization.Extensions.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Globalization.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.IO.Compression.FileSystem.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.IO.Compression.ZipFile.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.IO.Compression.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.IO.FileSystem.DriveInfo.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.IO.FileSystem.Primitives.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.IO.FileSystem.Watcher.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.IO.FileSystem.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.IO.IsolatedStorage.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.IO.MemoryMappedFiles.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.IO.Pipes.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.IO.Ports.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.IO.UnmanagedMemoryStream.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.IO.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Linq.Expressions.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Linq.Parallel.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Linq.Queryable.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Linq.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Net.Http.Rtc.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Net.Http.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Net.HttpListener.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Net.Mail.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Net.NameResolution.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Net.NetworkInformation.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Net.Ping.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Net.Primitives.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Net.Requests.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Net.Security.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Net.ServicePoint.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Net.Sockets.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Net.WebClient.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Net.WebHeaderCollection.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Net.WebProxy.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Net.WebSockets.Client.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Net.WebSockets.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Net.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Numerics.Vectors.WindowsRuntime.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Numerics.Vectors.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Numerics.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.ObjectModel.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Private.DataContractSerialization.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Private.ServiceModel.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Private.Uri.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Private.Xml.Linq.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Private.Xml.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Reflection.Context.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Reflection.DispatchProxy.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Reflection.Emit.ILGeneration.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Reflection.Emit.Lightweight.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Reflection.Emit.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Reflection.Extensions.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Reflection.Metadata.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Reflection.Primitives.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Reflection.TypeExtensions.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Reflection.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Resources.Reader.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Resources.ResourceManager.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Resources.Writer.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Runtime.CompilerServices.VisualC.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Runtime.Extensions.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Runtime.Handles.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Runtime.InteropServices.RuntimeInformation.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Runtime.InteropServices.WindowsRuntime.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Runtime.InteropServices.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Runtime.Numerics.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Runtime.Serialization.Formatters.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Runtime.Serialization.Json.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Runtime.Serialization.Primitives.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Runtime.Serialization.Xml.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Runtime.Serialization.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Runtime.WindowsRuntime.UI.Xaml.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Runtime.WindowsRuntime.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Runtime.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Security.AccessControl.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Security.Claims.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Security.Cryptography.Algorithms.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Security.Cryptography.Cng.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Security.Cryptography.Csp.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Security.Cryptography.Encoding.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Security.Cryptography.Primitives.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Security.Cryptography.X509Certificates.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Security.Principal.Windows.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Security.Principal.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Security.SecureString.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Security.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.ServiceModel.Duplex.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.ServiceModel.Http.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.ServiceModel.NetTcp.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.ServiceModel.Primitives.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.ServiceModel.Security.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.ServiceModel.Web.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.ServiceModel.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.ServiceProcess.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Text.Encoding.CodePages.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Text.Encoding.Extensions.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Text.Encoding.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Text.RegularExpressions.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Threading.Overlapped.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Threading.Tasks.Dataflow.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Threading.Tasks.Extensions.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Threading.Tasks.Parallel.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Threading.Tasks.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Threading.Thread.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Threading.ThreadPool.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Threading.Timer.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Threading.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Transactions.Local.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Transactions.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.ValueTuple.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Web.HttpUtility.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Web.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Windows.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Xml.Linq.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Xml.ReaderWriter.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Xml.Serialization.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Xml.XDocument.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Xml.XPath.XDocument.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Xml.XPath.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Xml.XmlDocument.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Xml.XmlSerializer.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.Xml.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/System.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/WindowsBase.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/mscorlib.dll",
+        "runtimes/win10-arm/lib/uap10.0.15138/netstandard.dll",
+        "runtimes/win10-arm/nativeassets/uap10.0.15138/clrcompression.dll"
+      ]
+    },
+    "runtime.win10-x64-aot.Microsoft.NETCore.UniversalWindowsPlatform/6.0.1": {
+      "sha512": "ouTXA9SGNNtKOorZBMYOCNVN8TxC4RlvaxzAU+ZRAxI00GMfoEBKjfd5FHJMtyi6+lng4yjpdUuz9h1ePgYV9Q==",
+      "type": "package",
+      "path": "runtime.win10-x64-aot.microsoft.netcore.universalwindowsplatform/6.0.1",
+      "files": [
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "ref/netstandard/_._",
+        "runtime.win10-x64-aot.microsoft.netcore.universalwindowsplatform.6.0.1.nupkg.sha512",
+        "runtime.win10-x64-aot.microsoft.netcore.universalwindowsplatform.nuspec",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/Microsoft.CSharp.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/Microsoft.VisualBasic.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/Microsoft.Win32.Primitives.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.AppContext.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Buffers.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Collections.Concurrent.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Collections.Immutable.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Collections.NonGeneric.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Collections.Specialized.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Collections.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.ComponentModel.Annotations.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.ComponentModel.Composition.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.ComponentModel.DataAnnotations.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.ComponentModel.EventBasedAsync.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.ComponentModel.Primitives.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.ComponentModel.TypeConverter.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.ComponentModel.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Configuration.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Console.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Core.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Data.Common.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Data.SqlClient.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Data.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Diagnostics.Contracts.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Diagnostics.Debug.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Diagnostics.DiagnosticSource.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Diagnostics.FileVersionInfo.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Diagnostics.Process.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Diagnostics.StackTrace.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Diagnostics.TextWriterTraceListener.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Diagnostics.Tools.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Diagnostics.TraceSource.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Diagnostics.Tracing.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Drawing.Primitives.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Drawing.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Dynamic.Runtime.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Globalization.Calendars.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Globalization.Extensions.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Globalization.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.IO.Compression.FileSystem.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.IO.Compression.ZipFile.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.IO.Compression.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.IO.FileSystem.DriveInfo.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.IO.FileSystem.Primitives.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.IO.FileSystem.Watcher.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.IO.FileSystem.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.IO.IsolatedStorage.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.IO.MemoryMappedFiles.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.IO.Pipes.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.IO.Ports.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.IO.UnmanagedMemoryStream.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.IO.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Linq.Expressions.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Linq.Parallel.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Linq.Queryable.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Linq.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Net.Http.Rtc.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Net.Http.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Net.HttpListener.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Net.Mail.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Net.NameResolution.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Net.NetworkInformation.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Net.Ping.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Net.Primitives.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Net.Requests.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Net.Security.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Net.ServicePoint.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Net.Sockets.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Net.WebClient.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Net.WebHeaderCollection.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Net.WebProxy.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Net.WebSockets.Client.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Net.WebSockets.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Net.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Numerics.Vectors.WindowsRuntime.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Numerics.Vectors.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Numerics.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.ObjectModel.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Private.DataContractSerialization.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Private.Reflection.Metadata.Ecma335.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Private.ServiceModel.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Private.Uri.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Private.Xml.Linq.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Private.Xml.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Reflection.Context.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Reflection.DispatchProxy.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Reflection.Emit.ILGeneration.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Reflection.Emit.Lightweight.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Reflection.Emit.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Reflection.Extensions.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Reflection.Metadata.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Reflection.Primitives.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Reflection.TypeExtensions.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Reflection.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Resources.Reader.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Resources.ResourceManager.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Resources.Writer.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Runtime.CompilerServices.VisualC.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Runtime.Extensions.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Runtime.Handles.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Runtime.InteropServices.RuntimeInformation.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Runtime.InteropServices.WindowsRuntime.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Runtime.InteropServices.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Runtime.Numerics.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Runtime.Serialization.Formatters.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Runtime.Serialization.Json.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Runtime.Serialization.Primitives.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Runtime.Serialization.Xml.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Runtime.Serialization.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Runtime.WindowsRuntime.UI.Xaml.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Runtime.WindowsRuntime.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Runtime.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Security.AccessControl.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Security.Claims.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Security.Cryptography.Algorithms.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Security.Cryptography.Cng.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Security.Cryptography.Csp.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Security.Cryptography.Encoding.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Security.Cryptography.Primitives.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Security.Cryptography.X509Certificates.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Security.Principal.Windows.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Security.Principal.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Security.SecureString.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Security.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.ServiceModel.Duplex.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.ServiceModel.Http.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.ServiceModel.NetTcp.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.ServiceModel.Primitives.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.ServiceModel.Security.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.ServiceModel.Web.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.ServiceModel.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.ServiceProcess.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Text.Encoding.CodePages.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Text.Encoding.Extensions.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Text.Encoding.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Text.RegularExpressions.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Threading.Overlapped.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Threading.Tasks.Dataflow.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Threading.Tasks.Extensions.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Threading.Tasks.Parallel.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Threading.Tasks.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Threading.Thread.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Threading.ThreadPool.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Threading.Timer.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Threading.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Transactions.Local.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Transactions.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.ValueTuple.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Web.HttpUtility.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Web.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Windows.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Xml.Linq.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Xml.ReaderWriter.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Xml.Serialization.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Xml.XDocument.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Xml.XPath.XDocument.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Xml.XPath.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Xml.XmlDocument.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Xml.XmlSerializer.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.Xml.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/System.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/WindowsBase.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/mscorlib.dll",
+        "runtimes/win10-x64-aot/lib/uap10.0.15138/netstandard.dll",
+        "runtimes/win10-x64-aot/nativeassets/uap10.0.15138/clrcompression.dll"
       ]
     },
     "runtime.win10-x64-aot.runtime.native.System.IO.Compression/4.0.1": {
@@ -21968,6 +22743,359 @@
         "runtimes/win10-x64-aot/lib/netcore50/clrcompression.dll"
       ]
     },
+    "runtime.win10-x64.Microsoft.NETCore.UniversalWindowsPlatform/6.0.1": {
+      "sha512": "iq7w9LmLzJla647TOEXrghCK14zw4ImIlnyZAO+h/XoRoq3l1OSng+hRBHzusgKwhvubdKHNlZWA9j4aj2fIng==",
+      "type": "package",
+      "path": "runtime.win10-x64.microsoft.netcore.universalwindowsplatform/6.0.1",
+      "files": [
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "ref/netstandard/_._",
+        "runtime.win10-x64.microsoft.netcore.universalwindowsplatform.6.0.1.nupkg.sha512",
+        "runtime.win10-x64.microsoft.netcore.universalwindowsplatform.nuspec",
+        "runtimes/win10-x64/lib/uap10.0.15138/Microsoft.CSharp.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/Microsoft.VisualBasic.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/Microsoft.Win32.Primitives.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.AppContext.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Buffers.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Collections.Concurrent.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Collections.Immutable.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Collections.NonGeneric.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Collections.Specialized.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Collections.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.ComponentModel.Annotations.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.ComponentModel.Composition.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.ComponentModel.DataAnnotations.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.ComponentModel.EventBasedAsync.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.ComponentModel.Primitives.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.ComponentModel.TypeConverter.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.ComponentModel.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Configuration.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Console.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Core.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Data.Common.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Data.SqlClient.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Data.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Diagnostics.Contracts.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Diagnostics.Debug.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Diagnostics.DiagnosticSource.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Diagnostics.FileVersionInfo.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Diagnostics.Process.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Diagnostics.StackTrace.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Diagnostics.TextWriterTraceListener.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Diagnostics.Tools.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Diagnostics.TraceSource.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Diagnostics.Tracing.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Drawing.Primitives.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Drawing.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Dynamic.Runtime.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Globalization.Calendars.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Globalization.Extensions.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Globalization.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.IO.Compression.FileSystem.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.IO.Compression.ZipFile.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.IO.Compression.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.IO.FileSystem.DriveInfo.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.IO.FileSystem.Primitives.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.IO.FileSystem.Watcher.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.IO.FileSystem.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.IO.IsolatedStorage.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.IO.MemoryMappedFiles.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.IO.Pipes.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.IO.Ports.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.IO.UnmanagedMemoryStream.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.IO.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Linq.Expressions.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Linq.Parallel.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Linq.Queryable.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Linq.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Net.Http.Rtc.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Net.Http.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Net.HttpListener.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Net.Mail.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Net.NameResolution.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Net.NetworkInformation.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Net.Ping.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Net.Primitives.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Net.Requests.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Net.Security.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Net.ServicePoint.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Net.Sockets.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Net.WebClient.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Net.WebHeaderCollection.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Net.WebProxy.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Net.WebSockets.Client.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Net.WebSockets.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Net.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Numerics.Vectors.WindowsRuntime.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Numerics.Vectors.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Numerics.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.ObjectModel.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Private.DataContractSerialization.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Private.ServiceModel.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Private.Uri.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Private.Xml.Linq.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Private.Xml.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Reflection.Context.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Reflection.DispatchProxy.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Reflection.Emit.ILGeneration.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Reflection.Emit.Lightweight.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Reflection.Emit.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Reflection.Extensions.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Reflection.Metadata.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Reflection.Primitives.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Reflection.TypeExtensions.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Reflection.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Resources.Reader.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Resources.ResourceManager.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Resources.Writer.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Runtime.CompilerServices.VisualC.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Runtime.Extensions.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Runtime.Handles.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Runtime.InteropServices.RuntimeInformation.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Runtime.InteropServices.WindowsRuntime.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Runtime.InteropServices.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Runtime.Numerics.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Runtime.Serialization.Formatters.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Runtime.Serialization.Json.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Runtime.Serialization.Primitives.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Runtime.Serialization.Xml.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Runtime.Serialization.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Runtime.WindowsRuntime.UI.Xaml.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Runtime.WindowsRuntime.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Runtime.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Security.AccessControl.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Security.Claims.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Security.Cryptography.Algorithms.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Security.Cryptography.Cng.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Security.Cryptography.Csp.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Security.Cryptography.Encoding.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Security.Cryptography.Primitives.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Security.Cryptography.X509Certificates.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Security.Principal.Windows.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Security.Principal.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Security.SecureString.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Security.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.ServiceModel.Duplex.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.ServiceModel.Http.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.ServiceModel.NetTcp.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.ServiceModel.Primitives.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.ServiceModel.Security.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.ServiceModel.Web.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.ServiceModel.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.ServiceProcess.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Text.Encoding.CodePages.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Text.Encoding.Extensions.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Text.Encoding.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Text.RegularExpressions.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Threading.Overlapped.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Threading.Tasks.Dataflow.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Threading.Tasks.Extensions.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Threading.Tasks.Parallel.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Threading.Tasks.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Threading.Thread.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Threading.ThreadPool.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Threading.Timer.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Threading.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Transactions.Local.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Transactions.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.ValueTuple.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Web.HttpUtility.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Web.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Windows.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Xml.Linq.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Xml.ReaderWriter.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Xml.Serialization.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Xml.XDocument.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Xml.XPath.XDocument.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Xml.XPath.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Xml.XmlDocument.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Xml.XmlSerializer.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.Xml.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/System.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/WindowsBase.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/mscorlib.dll",
+        "runtimes/win10-x64/lib/uap10.0.15138/netstandard.dll",
+        "runtimes/win10-x64/nativeassets/uap10.0.15138/clrcompression.dll"
+      ]
+    },
+    "runtime.win10-x86-aot.Microsoft.NETCore.UniversalWindowsPlatform/6.0.1": {
+      "sha512": "p4GOowv8/INpx65r/TU0OUNoBC3Qk3kbRKPAkqQ05Tf/rTg8NOLR+qxvNRlH49rsUvGb14RarUqscgwcekBOXA==",
+      "type": "package",
+      "path": "runtime.win10-x86-aot.microsoft.netcore.universalwindowsplatform/6.0.1",
+      "files": [
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "ref/netstandard/_._",
+        "runtime.win10-x86-aot.microsoft.netcore.universalwindowsplatform.6.0.1.nupkg.sha512",
+        "runtime.win10-x86-aot.microsoft.netcore.universalwindowsplatform.nuspec",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/Microsoft.CSharp.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/Microsoft.VisualBasic.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/Microsoft.Win32.Primitives.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.AppContext.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Buffers.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Collections.Concurrent.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Collections.Immutable.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Collections.NonGeneric.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Collections.Specialized.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Collections.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.ComponentModel.Annotations.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.ComponentModel.Composition.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.ComponentModel.DataAnnotations.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.ComponentModel.EventBasedAsync.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.ComponentModel.Primitives.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.ComponentModel.TypeConverter.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.ComponentModel.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Configuration.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Console.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Core.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Data.Common.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Data.SqlClient.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Data.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Diagnostics.Contracts.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Diagnostics.Debug.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Diagnostics.DiagnosticSource.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Diagnostics.FileVersionInfo.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Diagnostics.Process.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Diagnostics.StackTrace.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Diagnostics.TextWriterTraceListener.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Diagnostics.Tools.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Diagnostics.TraceSource.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Diagnostics.Tracing.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Drawing.Primitives.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Drawing.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Dynamic.Runtime.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Globalization.Calendars.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Globalization.Extensions.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Globalization.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.IO.Compression.FileSystem.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.IO.Compression.ZipFile.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.IO.Compression.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.IO.FileSystem.DriveInfo.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.IO.FileSystem.Primitives.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.IO.FileSystem.Watcher.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.IO.FileSystem.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.IO.IsolatedStorage.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.IO.MemoryMappedFiles.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.IO.Pipes.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.IO.Ports.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.IO.UnmanagedMemoryStream.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.IO.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Linq.Expressions.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Linq.Parallel.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Linq.Queryable.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Linq.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Net.Http.Rtc.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Net.Http.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Net.HttpListener.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Net.Mail.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Net.NameResolution.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Net.NetworkInformation.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Net.Ping.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Net.Primitives.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Net.Requests.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Net.Security.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Net.ServicePoint.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Net.Sockets.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Net.WebClient.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Net.WebHeaderCollection.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Net.WebProxy.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Net.WebSockets.Client.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Net.WebSockets.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Net.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Numerics.Vectors.WindowsRuntime.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Numerics.Vectors.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Numerics.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.ObjectModel.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Private.DataContractSerialization.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Private.Reflection.Metadata.Ecma335.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Private.ServiceModel.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Private.Uri.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Private.Xml.Linq.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Private.Xml.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Reflection.Context.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Reflection.DispatchProxy.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Reflection.Emit.ILGeneration.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Reflection.Emit.Lightweight.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Reflection.Emit.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Reflection.Extensions.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Reflection.Metadata.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Reflection.Primitives.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Reflection.TypeExtensions.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Reflection.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Resources.Reader.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Resources.ResourceManager.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Resources.Writer.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Runtime.CompilerServices.VisualC.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Runtime.Extensions.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Runtime.Handles.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Runtime.InteropServices.RuntimeInformation.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Runtime.InteropServices.WindowsRuntime.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Runtime.InteropServices.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Runtime.Numerics.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Runtime.Serialization.Formatters.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Runtime.Serialization.Json.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Runtime.Serialization.Primitives.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Runtime.Serialization.Xml.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Runtime.Serialization.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Runtime.WindowsRuntime.UI.Xaml.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Runtime.WindowsRuntime.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Runtime.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Security.AccessControl.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Security.Claims.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Security.Cryptography.Algorithms.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Security.Cryptography.Cng.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Security.Cryptography.Csp.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Security.Cryptography.Encoding.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Security.Cryptography.Primitives.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Security.Cryptography.X509Certificates.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Security.Principal.Windows.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Security.Principal.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Security.SecureString.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Security.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.ServiceModel.Duplex.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.ServiceModel.Http.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.ServiceModel.NetTcp.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.ServiceModel.Primitives.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.ServiceModel.Security.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.ServiceModel.Web.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.ServiceModel.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.ServiceProcess.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Text.Encoding.CodePages.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Text.Encoding.Extensions.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Text.Encoding.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Text.RegularExpressions.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Threading.Overlapped.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Threading.Tasks.Dataflow.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Threading.Tasks.Extensions.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Threading.Tasks.Parallel.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Threading.Tasks.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Threading.Thread.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Threading.ThreadPool.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Threading.Timer.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Threading.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Transactions.Local.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Transactions.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.ValueTuple.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Web.HttpUtility.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Web.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Windows.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Xml.Linq.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Xml.ReaderWriter.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Xml.Serialization.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Xml.XDocument.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Xml.XPath.XDocument.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Xml.XPath.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Xml.XmlDocument.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Xml.XmlSerializer.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.Xml.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/System.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/WindowsBase.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/mscorlib.dll",
+        "runtimes/win10-x86-aot/lib/uap10.0.15138/netstandard.dll",
+        "runtimes/win10-x86-aot/nativeassets/uap10.0.15138/clrcompression.dll"
+      ]
+    },
     "runtime.win10-x86-aot.runtime.native.System.IO.Compression/4.0.1": {
       "sha512": "c3yeCSi1emskJMjeqbX6B+neZRozhYk4et/Lv/6s05Yz30jcwY2Mj5PAr7mvmlAZtP5+HLbxz+Ux+RNNM/1GUA==",
       "type": "package",
@@ -21978,6 +23106,182 @@
         "runtime.win10-x86-aot.runtime.native.system.io.compression.4.0.1.nupkg.sha512",
         "runtime.win10-x86-aot.runtime.native.system.io.compression.nuspec",
         "runtimes/win10-x86-aot/lib/netcore50/clrcompression.dll"
+      ]
+    },
+    "runtime.win10-x86.Microsoft.NETCore.UniversalWindowsPlatform/6.0.1": {
+      "sha512": "nT3j6rR+hZwec3IGcFE8Vsq0bURezJzpCVg9UwQ9dzDXOrZrOfJm0RzWSuC5imRphSCFzz57I73TplpXyC1PUA==",
+      "type": "package",
+      "path": "runtime.win10-x86.microsoft.netcore.universalwindowsplatform/6.0.1",
+      "files": [
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "ref/netstandard/_._",
+        "runtime.win10-x86.microsoft.netcore.universalwindowsplatform.6.0.1.nupkg.sha512",
+        "runtime.win10-x86.microsoft.netcore.universalwindowsplatform.nuspec",
+        "runtimes/win10-x86/lib/uap10.0.15138/Microsoft.CSharp.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/Microsoft.VisualBasic.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/Microsoft.Win32.Primitives.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.AppContext.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Buffers.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Collections.Concurrent.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Collections.Immutable.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Collections.NonGeneric.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Collections.Specialized.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Collections.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.ComponentModel.Annotations.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.ComponentModel.Composition.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.ComponentModel.DataAnnotations.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.ComponentModel.EventBasedAsync.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.ComponentModel.Primitives.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.ComponentModel.TypeConverter.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.ComponentModel.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Configuration.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Console.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Core.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Data.Common.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Data.SqlClient.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Data.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Diagnostics.Contracts.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Diagnostics.Debug.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Diagnostics.DiagnosticSource.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Diagnostics.FileVersionInfo.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Diagnostics.Process.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Diagnostics.StackTrace.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Diagnostics.TextWriterTraceListener.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Diagnostics.Tools.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Diagnostics.TraceSource.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Diagnostics.Tracing.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Drawing.Primitives.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Drawing.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Dynamic.Runtime.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Globalization.Calendars.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Globalization.Extensions.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Globalization.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.IO.Compression.FileSystem.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.IO.Compression.ZipFile.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.IO.Compression.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.IO.FileSystem.DriveInfo.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.IO.FileSystem.Primitives.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.IO.FileSystem.Watcher.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.IO.FileSystem.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.IO.IsolatedStorage.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.IO.MemoryMappedFiles.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.IO.Pipes.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.IO.Ports.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.IO.UnmanagedMemoryStream.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.IO.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Linq.Expressions.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Linq.Parallel.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Linq.Queryable.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Linq.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Net.Http.Rtc.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Net.Http.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Net.HttpListener.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Net.Mail.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Net.NameResolution.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Net.NetworkInformation.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Net.Ping.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Net.Primitives.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Net.Requests.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Net.Security.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Net.ServicePoint.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Net.Sockets.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Net.WebClient.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Net.WebHeaderCollection.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Net.WebProxy.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Net.WebSockets.Client.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Net.WebSockets.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Net.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Numerics.Vectors.WindowsRuntime.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Numerics.Vectors.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Numerics.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.ObjectModel.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Private.DataContractSerialization.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Private.ServiceModel.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Private.Uri.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Private.Xml.Linq.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Private.Xml.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Reflection.Context.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Reflection.DispatchProxy.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Reflection.Emit.ILGeneration.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Reflection.Emit.Lightweight.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Reflection.Emit.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Reflection.Extensions.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Reflection.Metadata.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Reflection.Primitives.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Reflection.TypeExtensions.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Reflection.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Resources.Reader.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Resources.ResourceManager.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Resources.Writer.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Runtime.CompilerServices.VisualC.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Runtime.Extensions.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Runtime.Handles.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Runtime.InteropServices.RuntimeInformation.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Runtime.InteropServices.WindowsRuntime.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Runtime.InteropServices.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Runtime.Numerics.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Runtime.Serialization.Formatters.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Runtime.Serialization.Json.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Runtime.Serialization.Primitives.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Runtime.Serialization.Xml.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Runtime.Serialization.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Runtime.WindowsRuntime.UI.Xaml.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Runtime.WindowsRuntime.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Runtime.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Security.AccessControl.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Security.Claims.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Security.Cryptography.Algorithms.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Security.Cryptography.Cng.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Security.Cryptography.Csp.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Security.Cryptography.Encoding.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Security.Cryptography.Primitives.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Security.Cryptography.X509Certificates.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Security.Principal.Windows.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Security.Principal.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Security.SecureString.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Security.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.ServiceModel.Duplex.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.ServiceModel.Http.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.ServiceModel.NetTcp.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.ServiceModel.Primitives.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.ServiceModel.Security.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.ServiceModel.Web.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.ServiceModel.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.ServiceProcess.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Text.Encoding.CodePages.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Text.Encoding.Extensions.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Text.Encoding.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Text.RegularExpressions.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Threading.Overlapped.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Threading.Tasks.Dataflow.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Threading.Tasks.Extensions.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Threading.Tasks.Parallel.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Threading.Tasks.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Threading.Thread.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Threading.ThreadPool.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Threading.Timer.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Threading.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Transactions.Local.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Transactions.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.ValueTuple.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Web.HttpUtility.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Web.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Windows.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Xml.Linq.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Xml.ReaderWriter.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Xml.Serialization.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Xml.XDocument.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Xml.XPath.XDocument.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Xml.XPath.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Xml.XmlDocument.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Xml.XmlSerializer.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.Xml.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/System.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/WindowsBase.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/mscorlib.dll",
+        "runtimes/win10-x86/lib/uap10.0.15138/netstandard.dll",
+        "runtimes/win10-x86/nativeassets/uap10.0.15138/clrcompression.dll"
       ]
     },
     "runtime.win7-x64.Microsoft.NETCore.Jit/1.0.3": {
@@ -27325,14 +28629,14 @@
   },
   "projectFileDependencyGroups": {
     "": [
+      "Microsoft.AppCenter >= 1.0.0",
+      "Microsoft.AppCenter.Analytics >= 1.0.0",
+      "Microsoft.AppCenter.Crashes >= 1.0.0",
+      "Microsoft.AppCenter.Push >= 1.0.0",
       "Microsoft.ApplicationInsights >= 2.4.0",
       "Microsoft.ApplicationInsights.PersistenceChannel >= 1.2.3",
       "Microsoft.ApplicationInsights.WindowsApps >= 1.1.1",
-      "Microsoft.Azure.Mobile.Analytics >= 0.14.2",
-      "Microsoft.Azure.Mobile.Crashes >= 0.14.2",
-      "Microsoft.Azure.Mobile.Distribute >= 0.14.2",
-      "Microsoft.Azure.Mobile.Push >= 0.14.2",
-      "Microsoft.NETCore.UniversalWindowsPlatform >= 5.4.0"
+      "Microsoft.NETCore.UniversalWindowsPlatform >= 6.0.1"
     ],
     "UAP,Version=v10.0.14393": []
   },
@@ -27348,14 +28652,14 @@
       "projectStyle": "ProjectJson"
     },
     "dependencies": {
+      "Microsoft.AppCenter": "1.0.0",
+      "Microsoft.AppCenter.Analytics": "1.0.0",
+      "Microsoft.AppCenter.Crashes": "1.0.0",
+      "Microsoft.AppCenter.Push": "1.0.0",
       "Microsoft.ApplicationInsights": "2.4.0",
       "Microsoft.ApplicationInsights.PersistenceChannel": "1.2.3",
       "Microsoft.ApplicationInsights.WindowsApps": "1.1.1",
-      "Microsoft.Azure.Mobile.Analytics": "0.14.2",
-      "Microsoft.Azure.Mobile.Crashes": "0.14.2",
-      "Microsoft.Azure.Mobile.Distribute": "0.14.2",
-      "Microsoft.Azure.Mobile.Push": "0.14.2",
-      "Microsoft.NETCore.UniversalWindowsPlatform": "5.4.0"
+      "Microsoft.NETCore.UniversalWindowsPlatform": "6.0.1"
     },
     "frameworks": {
       "uap10.0.14393": {}

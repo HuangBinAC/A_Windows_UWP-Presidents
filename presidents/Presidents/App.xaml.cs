@@ -7,10 +7,14 @@ using Windows.UI.Xaml.Navigation;
 using Windows.UI;
 using Windows.UI.ViewManagement;
 using Windows.System.Profile;
-using Microsoft.Azure.Mobile;
-using Microsoft.Azure.Mobile.Analytics;
-using Microsoft.Azure.Mobile.Crashes;
-using Microsoft.Azure.Mobile.Push;
+//using Microsoft.Azure.Mobile;
+//using Microsoft.Azure.Mobile.Analytics;
+//using Microsoft.Azure.Mobile.Crashes;
+//using Microsoft.Azure.Mobile.Push;
+using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
+using Microsoft.AppCenter.Push;
 
 namespace Presidents
 {
@@ -53,7 +57,7 @@ namespace Presidents
                 // Send the notification summary to debug output
                 System.Diagnostics.Debug.WriteLine(summary);
             };
-            MobileCenter.LogLevel = LogLevel.Verbose;
+            AppCenter.LogLevel = LogLevel.Verbose;
             // TODO: 1.2 - Ensure we use ALL of the window space.  That means we have to make sure we follow the safe area of the screen!
             // ApplicationView.GetForCurrentView().SetDesiredBoundsMode(ApplicationViewBoundsMode.UseCoreWindow);
 
@@ -66,19 +70,19 @@ namespace Presidents
             //        Source = new Uri("ms-appx:///TvSafeColors.xaml")
             //    });
             //}
-            //MobileCenter code
-            //MobileCenter.SetLogUrl("https://in-staging-south-centralus.staging.avalanch.es");
-            MobileCenter.SetCountryCode("hi");
-            MobileCenter.Start("84599058-77f7-4801-9e62-bdbb7bf7293d", typeof(Analytics), typeof(Crashes), typeof(Push));
-            //Analytics.Enabled = true;
-            
-            var installid = MobileCenter.GetInstallIdAsync();
-            System.Diagnostics.Debug.WriteLine("InstallId="+installid.Result.ToString());
+            //App Center code
+            AppCenter.SetLogUrl("https://in-staging-south-centralus.staging.avalanch.es");
+            AppCenter.SetCountryCode("hi");
+            AppCenter.Start("500c9e4f-3339-4f67-acfe-72667c58a2b8", typeof(Analytics), typeof(Crashes), typeof(Push));
+            Analytics.SetEnabledAsync(true);
+
+            var installid = AppCenter.GetInstallIdAsync();
+            System.Diagnostics.Debug.WriteLine("InstallId=" + installid.Result.ToString());
             Push.CheckLaunchedFromNotification(e);
 
             CustomProperties properties = new CustomProperties();
-            properties.Set("color", "blue").Set("score", 10).Clear("score");
-            MobileCenter.SetCustomProperties(properties);
+            properties.Set("col1232", "blue").Set("score", 10).Clear("score").Clear("color1232");
+            AppCenter.SetCustomProperties(properties);
 
             ApplicationViewTitleBar titleBar = ApplicationView.GetForCurrentView().TitleBar;
             if (titleBar != null)

@@ -19,29 +19,45 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>D:\MobileCenter\TestProject\A_Windows_UWP-Presidents\presidents\Presidents\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>F1CDFDDBC5B122525F0B36097D3ADB4B88F9AF1E2CB49659EC95D301E8FFE9EB</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>63967vsclient.UWP-Presidentsbys_1.3.0.0_x86__pekm0tavj4jwp</RegisteredPackageMoniker>
+    <RegisteredManifestChecksum>BAC62ED5AD960F48E7601C35EFDD31219D398BF83D5A902242F28DD1820685F9</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>63967vsclient.UWP-Presidentsbys_1.4.10.0_x86__pekm0tavj4jwp</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>63967vsclient.UWP-Presidentsbys_pekm0tavj4jwp!App</RegisteredUserModeAppID>
     <RegisteredPackageID>63967vsclient.UWP-Presidentsbys</RegisteredPackageID>
     <RegisteredPackagePublisher>CN=6B0E04BB-E44B-43CE-89DF-DBA5BC33E3A2</RegisteredPackagePublisher>
-    <RegisteredVersion>1.3.0.0</RegisteredVersion>
+    <RegisteredVersion>1.4.10.0</RegisteredVersion>
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
     <AppXManifest Include="D:\MobileCenter\TestProject\A_Windows_UWP-Presidents\presidents\Presidents\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-08-24T03:20:09.037</Modified>
+      <Modified>2017-11-15T07:00:36.281</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\MobileCenter\TestProject\A_Windows_UWP-Presidents\presidents\Presidents\bin\x86\Debug\Presidents.exe">
       <PackagePath>entrypoint\Presidents.exe</PackagePath>
-      <Modified>2017-08-24T03:20:04.840</Modified>
+      <Modified>2017-11-15T06:59:04.793</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\v-ruiywu\.nuget\packages\microsoft.azure.mobile.crashes\0.14.2\build\uap10.0\..\..\runtimes\win10-x86\native\WatsonRegistrationUtility.dll">
+    <AppxPackagedFile Include="C:\Users\v-ruiywu\.nuget\packages\microsoft.appcenter.crashes\1.0.0\build\uap10.0\..\..\runtimes\win10-x86\native\WatsonRegistrationUtility.dll">
       <PackagePath>WatsonRegistrationUtility.dll</PackagePath>
-      <Modified>2017-08-16T18:12:08.000</Modified>
+      <Modified>2017-11-14T21:31:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\v-ruiywu\.nuget\packages\Microsoft.AppCenter\1.0.0\lib\uap10.0\Microsoft.AppCenter.dll">
+      <PackagePath>Microsoft.AppCenter.dll</PackagePath>
+      <Modified>2017-11-14T21:31:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\v-ruiywu\.nuget\packages\Microsoft.AppCenter.Analytics\1.0.0\lib\uap10.0\Microsoft.AppCenter.Analytics.dll">
+      <PackagePath>Microsoft.AppCenter.Analytics.dll</PackagePath>
+      <Modified>2017-11-14T21:31:22.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\v-ruiywu\.nuget\packages\Microsoft.AppCenter.Crashes\1.0.0\runtimes\win10-x86\lib\uap10.0\Microsoft.AppCenter.Crashes.dll">
+      <PackagePath>Microsoft.AppCenter.Crashes.dll</PackagePath>
+      <Modified>2017-11-14T21:31:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\v-ruiywu\.nuget\packages\Microsoft.AppCenter.Push\1.0.0\lib\uap10.0\Microsoft.AppCenter.Push.dll">
+      <PackagePath>Microsoft.AppCenter.Push.dll</PackagePath>
+      <Modified>2017-11-14T21:31:26.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\v-ruiywu\.nuget\packages\Microsoft.ApplicationInsights\2.4.0\lib\uap10.0\Microsoft.ApplicationInsights.dll">
       <PackagePath>Microsoft.ApplicationInsights.dll</PackagePath>
@@ -54,26 +70,6 @@
     <AppxPackagedFile Include="C:\Users\v-ruiywu\.nuget\packages\Microsoft.ApplicationInsights.WindowsApps\1.1.1\lib\win81\Microsoft.ApplicationInsights.Extensibility.Windows.dll">
       <PackagePath>Microsoft.ApplicationInsights.Extensibility.Windows.dll</PackagePath>
       <Modified>2015-12-10T07:13:22.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\v-ruiywu\.nuget\packages\Microsoft.Azure.Mobile\0.14.2\lib\uap10.0\Microsoft.Azure.Mobile.dll">
-      <PackagePath>Microsoft.Azure.Mobile.dll</PackagePath>
-      <Modified>2017-08-16T18:12:06.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\v-ruiywu\.nuget\packages\Microsoft.Azure.Mobile.Analytics\0.14.2\lib\uap10.0\Microsoft.Azure.Mobile.Analytics.dll">
-      <PackagePath>Microsoft.Azure.Mobile.Analytics.dll</PackagePath>
-      <Modified>2017-08-16T18:12:06.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\v-ruiywu\.nuget\packages\Microsoft.Azure.Mobile.Crashes\0.14.2\runtimes\win10-x86\lib\uap10.0\Microsoft.Azure.Mobile.Crashes.dll">
-      <PackagePath>Microsoft.Azure.Mobile.Crashes.dll</PackagePath>
-      <Modified>2017-08-16T18:12:08.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\v-ruiywu\.nuget\packages\Microsoft.Azure.Mobile.Distribute\0.14.2\lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Microsoft.Azure.Mobile.Distribute.dll">
-      <PackagePath>Microsoft.Azure.Mobile.Distribute.dll</PackagePath>
-      <Modified>2017-08-16T18:12:10.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\v-ruiywu\.nuget\packages\Microsoft.Azure.Mobile.Push\0.14.2\lib\uap10.0\Microsoft.Azure.Mobile.Push.dll">
-      <PackagePath>Microsoft.Azure.Mobile.Push.dll</PackagePath>
-      <Modified>2017-08-16T18:12:10.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\v-ruiywu\.nuget\packages\Microsoft.CSharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -567,9 +563,9 @@
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
       <Modified>2016-06-11T14:15:04.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\v-ruiywu\.nuget\packages\Microsoft.Azure.Mobile.Crashes\0.14.2\runtimes\win10-x86\lib\uap10.0\WatsonRegistrationUtility.winmd">
+    <AppxPackagedFile Include="C:\Users\v-ruiywu\.nuget\packages\Microsoft.AppCenter.Crashes\1.0.0\runtimes\win10-x86\lib\uap10.0\WatsonRegistrationUtility.winmd">
       <PackagePath>WatsonRegistrationUtility.winmd</PackagePath>
-      <Modified>2017-08-16T18:12:08.000</Modified>
+      <Modified>2017-11-14T21:31:24.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\MobileCenter\TestProject\A_Windows_UWP-Presidents\presidents\Presidents\Assets\1024px-James_Madison.jpg">
       <PackagePath>Assets\1024px-James_Madison.jpg</PackagePath>
@@ -840,11 +836,11 @@
     <AppxPackagedFile Include="D:\MobileCenter\TestProject\A_Windows_UWP-Presidents\presidents\Presidents\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-08-24T03:20:07.452</Modified>
+      <Modified>2017-11-15T07:00:36.098</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\MobileCenter\TestProject\A_Windows_UWP-Presidents\presidents\Presidents\bin\x86\Debug\Core\Presidents.exe">
       <PackagePath>Presidents.exe</PackagePath>
-      <Modified>2017-08-24T03:20:09.020</Modified>
+      <Modified>2017-11-15T07:00:36.279</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
